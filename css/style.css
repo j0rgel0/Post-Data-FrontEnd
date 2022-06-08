@@ -1,0 +1,38 @@
+/* Encabezados h1 */
+#tituloH1{
+    color: #405BF5;
+}
+/* Encabezados h1 */
+
+/* CONTENIDO del About US */
+.card {
+    cursor: pointer;
+}
+.hd {
+    font-size: 25px;
+    font-weight: 550;
+}
+.card.hover,
+.card:hover {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+    font-weight: 600;
+}
+button.focus,
+button:focus {
+    outline: 0;
+    box-shadow: none !important;
+}
+.ft {
+    margin-top: 25px;
+}
+
+#fotoAboutUs {
+    margin-bottom: 35px;
+    width: 30%;
+    border-radius: 100px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+/* CONTENIDO del About US */
