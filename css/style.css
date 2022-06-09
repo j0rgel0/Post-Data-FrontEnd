@@ -36,3 +36,72 @@ button:focus {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 /* CONTENIDO del About US */
+
+/* -----------------  */
+/* CSS del formulario  */
+
+form {
+    max-width: 420px;
+    margin: 50px auto;
+  }
+  
+  .campos {
+    color: black;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: 10px;
+    line-height: 22px;
+    border: 2px solid lightgrey;
+    padding: 13px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  textarea {
+    height: 150px;
+    line-height: 150%;
+    resize: vertical;
+  }
+  
+  [type="submit"] {
+    width: 100%;
+    background: #FFD980;
+    border: 0;
+    cursor: pointer;
+    color: #405BF5;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: -4px;
+    font-weight: 600;
+    border-radius: 10px;
+  }
+  #contacto{
+      color: #405BF5;
+  }
+  ::placeholder{
+      color: lightgrey; 
+  }
+  
+  .etiqueta{
+      font-size: 25px;
+      color: #405BF5;
+  }
+   [type="text"]:hover {
+     background: lightgray;
+   }
+   [type="email"]:hover {
+    background: gainsboro;
+  }
+
+  #errorNombre, #errorEmail, #errorAsunto, #errorMensaje, #errorTelefono{
+    color: red;
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+
+
+  /* CSS del formulario  */
+ /* ---------------- */  
