@@ -77,7 +77,7 @@ body {
 .logo {
   margin-top: 7px;
   margin-left: 70px;
-  width: 12%;
+  width: 120px;
 }
 
 /* Estilo del texto del menú */
@@ -132,13 +132,7 @@ button:focus {
 .ft {
   margin-top: 25px;
 }
-/* .chk {
-  margin-bottom: 5px;
-}
-.rck {
-  margin-top: 20px;
-  padding-bottom: 15px;
-} */
+
 
 #fotoAboutUs {
   margin-bottom: 35px;
@@ -150,6 +144,14 @@ button:focus {
 .enlacesFooter{
   padding-right: 10px;
 }
+
+/* -----------------  */
+/* Título del header  */
+#tituloH1{
+  color: #405BF5;
+  margin-bottom: 30px;
+}
+
 
 /* -----------------  */
 /* CSS del formulario  */
@@ -192,9 +194,7 @@ textarea {
   font-weight: 600;
   border-radius: 10px;
 }
-#contacto{
-    color: #405BF5;
-}
+
 ::placeholder{
     color: lightgrey; 
 }
@@ -210,7 +210,7 @@ textarea {
   background: gainsboro;
 }
 
-#errorNombre, #errorEmail, #errorAsunto, #errorMensaje {
+#errorNombre, #errorEmail, #errorAsunto, #errorMensaje, #errorTelefono {
   color: red;
   margin-left: 10px;
   margin-bottom: 10px;
@@ -225,7 +225,7 @@ textarea {
 
 /* FOOTER */
 #logoFooter {
-  width: 10%;
+  width: 110px;
   display: block;
   margin: 0px auto;
   margin-top: 20px;
