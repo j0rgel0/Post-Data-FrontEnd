@@ -22,6 +22,52 @@
 </head>
 
 <body>
+  
+  <!--nav bar-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light bg-white textomenu">
+    <img class="navbar-brand logo" src="./img/logo.png" />
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mr-auto">
+
+        <!-- Liga a página de Inicio -->
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+        </li>
+
+        <!-- Liga a página de Nosotros -->
+        <li class="nav-item">
+          <a class="nav-link" href="#">Nosotros</a>
+        </li>
+
+        <!-- Liga a página de productos con dropdown(menú desplegable)-->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Productos
+          </a>
+          <!-- Para generar otro enlace en el menú crea otro contenedor div. -->
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Todos los productos</a>
+          </div>
+        </li>
+
+        <!-- Liga a página de contacto -->
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contacto</a>
+        </li>
+
+        <!-- Liga a página de login -->
+        <li class="nav-item">
+          <a class="nav-link" href="#">Login</a>
+        </li>
+      </ul>
+    </div>
+  </nav> <!--nav bar-->
+
 
   <!--   SECTION   CONTENIDO   -->
   <form id="formEnviar" method="post">  

@@ -20,6 +20,7 @@ botonEnviar.addEventListener("click", (event)=> {
  
     if(successNombre && successEmail && successTelefono && successAsunto && successMensaje) {
         console.log("Enviando correo");
+        sendEmail();
     } else {
         setTimeout(
             function(){
@@ -37,8 +38,8 @@ function sendEmail() {
         Host: "smtp.elasticemail.com",
         Username: "postdata.imaginedev@gmail.com",
         Password: "DB8C0541E7682650A9716528D0C3A11F0301",
-        To: 'postdata.imaginedev@gmail.com', //se puede cambiar 
-        From: "postdata.imaginedev@gmail.com",//usuario 
+        To: 'postdata.imaginedev@gmail.com', 
+        From: "postdata.imaginedev@gmail.com", 
         Subject: `${asunto}`,
         Body: `Correo: ${email} <br/>
           Nombre: ${nombre} <br/>
