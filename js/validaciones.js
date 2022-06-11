@@ -1,15 +1,10 @@
 function validarCadena(valor, nombreCampo){
     let success = false;
 
-    if (!isNaN(valor)) {
-        document.getElementById(`error${nombreCampo}`).innerHTML = `Tu ${nombreCampo} no debe contener números.<br>`;
-    } else if (valor.length < 3) {
-        document.getElementById(`error${nombreCampo}`).innerHTML = `Tu ${nombreCampo} debe de tener más de 3 caracteres.<br>`;
-    } else if (valor.length === 0) {
-        document.getElementById(`error${nombreCampo}`).innerHTML = `Debes ingresar un ${nombreCampo} válido.<br>`;
-    } else {
-        success = true;
+    if ((valor.length < 3) || (valor == !isNaN) ){
+        document.getElementById(`error${nombreCampo}`).innerHTML = `Tu ${nombreCampo} debe de tener más de 3 caracteres y/o no contener numeros .<br>`;
     }
+
     return success;
 }
 // Función utilizando expresiones regulares para validar email
