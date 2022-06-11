@@ -1,7 +1,7 @@
 function validarCadena(valor, nombreCampo){
     let success = false;
 
-    if ((valor.length < 3) || (valor == !isNaN) ){
+    if ((valor.length < 3) || !isNaN(valor) ){
         document.getElementById(`error${nombreCampo}`).innerHTML = `Tu ${nombreCampo} debe de tener más de 3 caracteres y/o no contener numeros .<br>`;
     }
 
