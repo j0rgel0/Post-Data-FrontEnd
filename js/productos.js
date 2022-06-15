@@ -39,3 +39,22 @@ addItem({
     'precio':'268.00'
 });
 
+addItem({
+    'nombre':'Contemporary Japanese Architecture',
+    'autor':'Philip Jodidio',
+    'img':'https://www.gandhi.com.mx/media/catalog/product/9/7/9783836575119_7f0d.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=478&width=300&canvas=300:478',
+    'editorial':'TASCHEN',
+    'descripcion':'Un estudio de la escena arquitectónica contemporánea de JapónLa arquitectura japonesa contemporánea ha sido durante mucho tiempo una de las más imaginativas del mundo, y es famosa por sus diseños sostenibles y su infinita creatividad. Nada menos que siete arquitectos japoneses han ganado el premio Pritzker.Desde que la Exposición Universal de Osaka de 1970 cedió el protagonismo a las formas contemporáneas, Japón ha sido uno de los actores clave de la arquitectura global. Con un vocabulario limitado intencionalmente a formas geométricas, Tadao Ando puso la arquitectura japonesa en el mapa cultural del mundo y estableció un puente entre Oriente y Occidente. Siguiendo la estela de los edificios de Ando, en su mayoría de hormigón, figuras como Kengo Kuma (Estadio Nacional de Japón, destinado a albergar los Juegos Olímpicos que debían haberse celebrado en 2020), Shigeru Ban (Centro de Patrimonio Mundial Monte Fuji) y Kazuyo Sejima (Museo de Arte Contemporáneo del Siglo XXI de Kanazawa) se convirtieron en pioneros de un enfoque más sostenible.',
+    'isbn':'9783836575119',
+    'precio':'1649'
+});
+
+addItem({
+    'nombre':'El infinito en un junco',
+    'autor':'Irene Vallejo',
+    'img':'https://www.gandhi.com.mx/media/catalog/product/9/7/9786073804332_695a.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=478&width=300&canvas=300:478',
+    'editorial':'Debolsillo',
+    'descripcion':'La historia de los libros, el alfabeto, las bibliotecas... contada/bb/b bcon erudición y amenidad,/bb/b bsentido del humor y elegancia,/bb/b bhaciendo paralelismos con el presente./b/p pbLaura Freixas/b/ppEn esta obra exquisita sobre los orígenes del libro, Irene Vallejo recorre la historia del asombroso artefacto que nació hace cinco milenios, cuando los egipcios descubrieron el potencial de un junco al que llamaron papiro. Con gran sensibilidad y soltura narrativa, la autora se remonta a los campos de batalla de Alejandro, los palacios de Cleopatra, las primeras librerías y los talleres de copia manuscrita, pero también visita las hogueras donde ardieron códices prohibidos, la biblioteca de Sarajevo y el laberinto subterráneo de Oxford en el año 2000. Los tiempos se funden en la aventura colectiva de quienes solo han concebido la vida en compañía de la palabra escrita. Y este ensayo acaba prolongando el diálogo infinito del que tan magistralmente nos habla./ppUn relato poético y preciso de cuando los libros eran jóvenes y todo sucedía por primera vez. bHéctor Abad Faciolince/b/ppiEl infinito en un junco/i nos permite volver a tener esperanza en nosotros mismos y en nuestra imaginación. La gran empresa del libro es una de nuestras grandes conquistas como especie.',
+    'isbn':'9786073804332',
+    'precio':'399'
+});
