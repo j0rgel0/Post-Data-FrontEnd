@@ -216,12 +216,16 @@ textarea {
   margin-bottom: 10px;
 }
 
-
 /* CSS del formulario  */
 /* ---------------- */  
 
 
-
+/* Contenedor del producto  */
+#contenedorProducto{
+  border: 1px solid rgb(136, 132, 132);
+  margin: 5px;
+  box-shadow: rgba(187, 189, 192, 0.35) 0px 1px 10px;
+}
 
 /* FOOTER */
 #logoFooter {
