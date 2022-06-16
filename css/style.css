@@ -225,6 +225,7 @@ textarea {
   border: 1px solid rgb(136, 132, 132);
   margin: 5px;
   box-shadow: rgba(187, 189, 192, 0.35) 0px 1px 10px;
+  width: 70%;
 }
 
 /* FOOTER */

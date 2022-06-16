@@ -1,6 +1,6 @@
 function addItem(item){
     const itemHTML = 
-        `<div id="contenedorProducto" class="col mb-5">
+        `<div id="contenedorProducto" class="col-md-5 col-lg-4 col-xl-2">
         <div class=" h-100">
         <img class="card-img-top p-3" src="${item.img}" alt="..." width="30%"/>
         <div class="card-body p-4">
