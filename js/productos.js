@@ -1,20 +1,19 @@
 function addItem(item){
     const itemHTML = 
-        `<div id="contenedorProducto" class="col-md-5 col-lg-4 col-xl-2">
-        <div class=" h-100">
-        <img class="card-img-top p-3" src="${item.img}" alt="..." width="30%"/>
-        <div class="card-body p-4">
+        `<div id="contenedorProducto" class="col-md-5 col-lg-3 col-xl-2">
+        <img class="card-img-top p-3" src="${item.img}"/>
+        <div class="card-text">
             <div class="text-center">
-                <!-- Product name-->
-                <h5 class="fw-bolder">${item.nombre}</h5>
-                <!-- Product price-->
-                $${item.precio}
+                <h5>${item.nombre}</h5>
+                <p>$${item.precio}</p>
             </div>
         </div>
-        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Agregar</a></div>
-                            </div>
-        </div>`;
+        <div class="text-center m-3">
+            <a class="btn btn-outline-dark" href="#">
+            Agregar
+            </a>
+        </div>
+        `;
     const itemsContainer = document.getElementById("list-items");
     itemsContainer.innerHTML += itemHTML;
 }
@@ -138,5 +137,4 @@ addItem({
     'isbn':'9786074532210',
     'precio':'150'
 });
-
 
