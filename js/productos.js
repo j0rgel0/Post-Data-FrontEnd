@@ -110,6 +110,16 @@ addItem({
 });
 
 addItem({
+    'nombre':'Las intermitencias de la muerte',
+    'autor':'José Saramago',
+    'img':'https://www.gandhi.com.mx/media/catalog/product/9/7/9789707703254_9cae.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=478&width=300&canvas=300:478',
+    'editorial':'Alfaguara',
+    'descripcion':'En un país cuyo nombre no será mencionado, se produce algo nunca visto desde el principio del mundo: la muerte decide suspender su trabajo letal, la gente deja de morir. La euforia colectiva se desata, pero muy pronto dará paso a la desesperación yal caos. Sobran los motivos. Si es cierto que las personas ya no mueren, eso no significa que el tiempo haya parado. El destino de los humanos será una vejez eterna.En un país cuyo nombre no será mencionado, se produce algo nunca visto desde elprincipio del mundo: la muerte decide suspender su trabajo letal, la gente deja de morir. La euforia colectiva se desata, pero muy pronto dará paso a la desesperación y al caos. Sobran los motivos. Si es cierto que las personas ya no mueren, eso no significa que el tiempo haya parado. El destino de los humanos será una vejez eterna.',
+    'isbn':'9789707703254',
+    'precio':'298'
+});
+
+addItem({
     'nombre':'La gran cacería',
     'autor':'Robert Jordan',
     'img':'https://www.gandhi.com.mx/media/catalog/product/9/7/9788445007013_66de.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=478&width=300&canvas=300:478',
@@ -118,3 +128,15 @@ addItem({
     'isbn':'9788445007013',
     'precio':'458'
 });
+
+addItem({
+    'nombre':'La rebelión de los colgados',
+    'autor':'Bruno Traven Traven',
+    'img':'https://www.gandhi.com.mx/media/catalog/product/9/7/9786074532210.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=478&width=300&canvas=300:478',
+    'editorial':'Selector',
+    'descripcion':'La rebelión de los colgados, forma junto con Gobierno, La Carreta, Marcha al imperio de la caoba, Monterías y El general, el ciclo de la caoba. Estas novelas, independientes entre sí, narran el drama de los indios del México tropical a principios del siglo XX. La rebelión de los colgados es la intensa historia del levantamiento de los peones oprimidos y de su lucha por alcanzar la libertad e independencia.',
+    'isbn':'9786074532210',
+    'precio':'150'
+});
+
+
