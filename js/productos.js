@@ -78,3 +78,23 @@ addItem({
     'isbn':'9786073807869',
     'precio':'369'
 });
+
+addItem({
+    'nombre':'La segunda guerra mundial (1939-1945)',
+    'autor':'Martin Gilbert',
+    'img':'https://www.gandhi.com.mx/media/catalog/product/t/m/tmp9788490601648_a685.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=478&width=300&canvas=300:478',
+    'editorial':'La esfera de los libros',
+    'descripcion':'Por primera vez en un solo volumen los dos tomos sobre la Segunda Guerra Mundial de Martin Gilbert. La Segunda Guerra Mundial fue el conflicto bélico más destructivo de la historia.',
+    'isbn':'9788490601648',
+    'precio':'852'
+});
+
+addItem({
+    'nombre':'El hombre sin rostro',
+    'autor':'Masha Gessen',
+    'img':'https://www.gandhi.com.mx/media/catalog/product/9/7/9786073815161_10e2.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=478&width=300&canvas=300:478',
+    'editorial':'Debate',
+    'descripcion':'La fascinante historia de cómo Vladímir Putin, un agente mediocre del KGB, llegó a la presidencia de Rusia, deshizo años de avances y convirtió a su país de nuevo en una amenaza para sus ciudadanos. ',
+    'isbn':'9786073815161',
+    'precio':'299'
+});
