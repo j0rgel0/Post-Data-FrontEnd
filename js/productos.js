@@ -58,3 +58,23 @@ addItem({
     'isbn':'9786073804332',
     'precio':'399'
 });
+
+addItem({
+    'nombre':'Los juegos del hambre: En llamas',
+    'autor':'Suzanne Collins',
+    'img':'https://www.gandhi.com.mx/media/catalog/product/9/7/9786073807852_ddec.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=478&width=300&canvas=300:478',
+    'editorial':'Molino',
+    'descripcion':'El mundo estará observando.Katniss Everdeen sobrevivió a Los Juegos del Hambre, pero el Capitolio quiere venganza.Contra todo pronóstico, Katniss Everdeen y Peeta Mellark siguen vivos.',
+    'isbn':'9786073807852',
+    'precio':'359'
+});
+
+addItem({
+    'nombre':'Los juegos del hambre: Sinsajo',
+    'autor':'Suzanne Collins',
+    'img':'https://www.gandhi.com.mx/media/catalog/product/9/7/9786073807869_9037.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=478&width=300&canvas=300:478',
+    'editorial':'Molino',
+    'descripcion':'El mundo estará observando.«SI NOSOTROS ARDEMOS, TÚ ARDERÁS CON NOSOTROS».Katniss Everdeen sobrevivió dos veces a los Juegos del Hambre, pero no está a salvo. ',
+    'isbn':'9786073807869',
+    'precio':'369'
+});
