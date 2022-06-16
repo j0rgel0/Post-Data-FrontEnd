@@ -98,3 +98,23 @@ addItem({
     'isbn':'9786073815161',
     'precio':'299'
 });
+
+addItem({
+    'nombre':'El ojo del mundo',
+    'autor':'Robert Jordan',
+    'img':'https://www.gandhi.com.mx/media/catalog/product/9/7/9788445007006_4bdf.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=478&width=300&canvas=300:478',
+    'editorial':'Minotauro México',
+    'descripcion':'La vida de Rand Al’Thor y sus amigos en Campo de Emond ha resultado bastante monótona hasta que una joven misteriosa llega al pueblo. Moraine, una maga capaz de encauzar el Poder Único, anuncia el despertar de una terrible amenaza. Esa misma noche, el pueblo se ve atacado por espantosos trollocs sedientos de sangre, unas bestias semihumanas que hastaentonces se habían considerado una leyenda. Mientras Campo de Emond soporta la ofensiva, Moraine y su guardián ayudan a Rand y a sus amigos a escapar.',
+    'isbn':'9788445007006',
+    'precio':'498'
+});
+
+addItem({
+    'nombre':'La gran cacería',
+    'autor':'Robert Jordan',
+    'img':'https://www.gandhi.com.mx/media/catalog/product/9/7/9788445007013_66de.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=478&width=300&canvas=300:478',
+    'editorial':'Minotauro México',
+    'descripcion':'¡Rand ha sobrevivido a su primer enfrentamiento con los perversos seguidores del Oscuro, pero ni sus amigos ni él están a salvo, ya que el señor del mal ha liberado a los Renegados, mientras los héroes de todas las eras se levantan de la tumba cuando el Cuerno de Valere los saca de su sueño. Al verse obligado a enfrentarse alas fuerzas de la oscuridad, Rand decide escapar de su destino.Pero la profecía tiene que cumplirse. Por su calidad literaria, su ambicioso planteamiento y su descomunal historia, La Rueda del Tiempo es la saga de fantasía más importante de los últimos treinta años. El lector que inicie el camino junto a Egwene al Vere, Nynaeve al Meara, Moraine, Rand, Mat y Perrin no podrá abandonar el viaje hasta su incierto y sorprendente final.',
+    'isbn':'9788445007013',
+    'precio':'458'
+});
