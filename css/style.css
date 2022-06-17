@@ -229,6 +229,42 @@ textarea {
   width: 60%;
 }
 
+#imagenProducto:hover {
+  opacity: 0.2;
+}
+
+#contenedorProducto #botonAnadir{
+  color: rgb(0, 0, 0);
+  background-color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 40px;
+  width: 140px;
+  height: 40px;
+  border-radius: 10px;
+  opacity: 0;
+  transform: translateX(-50%);
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transition: all .4s ease-out;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 1px 30px;
+  }
+  
+  #contenedorProducto #botonAnadir:hover{ 
+    background-color: #000000;   
+    color: rgb(255, 255, 255);
+    border: 0px;
+  }
+
+  #contenedorProducto:hover #botonAnadir{
+  opacity: 1;
+  bottom: 200px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 1px 30px;
+  }
+
 /* FOOTER */
 #logoFooter {
   width: 110px;
