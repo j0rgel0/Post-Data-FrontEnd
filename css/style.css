@@ -197,7 +197,7 @@ textarea {
 }
 
 ::placeholder{
-    color: lightgrey; 
+    color: rgb(195, 195, 195); 
 }
 
 .etiqueta{
@@ -205,10 +205,10 @@ textarea {
     color: #405BF5;
 }
  [type="text"]:hover {
-   background: lightgray;
+   background: rgb(238, 233, 233);
  }
  [type="email"]:hover {
-  background: gainsboro;
+  background: rgb(238, 233, 233);
 }
 
 #errorNombre, #errorEmail, #errorAsunto, #errorMensaje, #errorTelefono {
