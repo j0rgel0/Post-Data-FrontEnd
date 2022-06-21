@@ -7,14 +7,12 @@ botonEnviar.addEventListener("click", (event)=> {
     const nombre = form.nombre.value;
     const email = form.email.value;
     const telefono = form.telefono.value;
-    const asunto = form.asunto.value;
     const mensaje = form.mensaje.value;
     const error = document.querySelectorAll(".error");
 
    const successNombre = validarCadena(nombre, "Nombre"); 
    const successEmail = validarEmail(email);
    const successTelefono = validarTelefono(telefono);
-   const successAsunto = validarCadena(asunto, "Asunto");
    const successMensaje = validarCadena(mensaje, "Mensaje");
 
  
