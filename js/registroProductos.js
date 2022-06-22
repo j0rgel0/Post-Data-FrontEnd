@@ -18,6 +18,21 @@ botonEnviar.addEventListener("click", (event)=> {
     }
 });
 
+let botonAgregar = document.querySelector("#botonAgregar");
+botonAgregar.addEventListener("click", (event)=> {
+    event.preventDefault();
+
+    const form = document.querySelector("#formAgregar");
+    const nombre = form.nombre.value;
+    const autor = form.autor.value;
+    const isbn = form.isbn.value;
+    const descripcion = form.descripcion.value;
+    const urlImagen = form.urlImagen.value;
+    const precio = form.precio.value;
+
+    const product = {nombre,autor,isbn,descripcion,urlImagen,precio};
+    console.log(product);
+});
 
 
 
