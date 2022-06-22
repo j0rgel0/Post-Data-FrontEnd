@@ -197,11 +197,7 @@ textarea {
 }
 
 ::placeholder{
-<<<<<<< HEAD
     color: rgb(195, 195, 195); 
-=======
-    color:grey; 
->>>>>>> develop
 }
 
 .etiqueta{
