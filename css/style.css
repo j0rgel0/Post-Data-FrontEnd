@@ -215,7 +215,8 @@ textarea {
   background: rgb(238, 233, 233);
 }
 
-#errorNombre, #errorEmail, #errorAsunto, #errorMensaje, #errorTelefono {
+#errorNombre, #errorEmail, #errorAsunto, #errorMensaje, #errorTelefono, 
+#errorLibro, #errorAutor, #errorisbn, #errorImagen,#errorPrecio,#errorDescripcion {
   color: red;
   margin-left: 10px;
   margin-bottom: 10px;
