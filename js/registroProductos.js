@@ -25,4 +25,13 @@ botonEnviar.addEventListener("click", (event)=> {
 
     // Crear de nuevo JSON
     localStorage.setItem("productos", JSON.stringify(datos));
+
+    txtNombre.value = "";
+    txtNombre.focus();
+    txtAutor.value = "";
+    txtEditorial.value = "";
+    txtISBN.value = "";
+    txtURL.value = "";
+    txtDescripcion.value = "";
+    txtPrecio.value = "";
 });
