@@ -27,7 +27,7 @@ function validarTelefono(telefono) {
 }
 
 function validarLibro(libro) {
-    let regex = /(?!.*[\.\-\_]{2,})^[a-zA-Z0-9\.\-\_]{3,24}$/;
+    let regex = /[^0-9\.\,\"\?\!\;\:\#\$\%\&\(\)\*\+\-\/\<\>\=\@\[\]\\\^\_\{\}\|\~]+/;
     const success = regex.test(libro); 
     if(!success) {
         document.getElementById("errorLibro").innerHTML = "El libro no está correcto.<br>";
@@ -43,6 +43,17 @@ function validarAutor(autor) {
         document.getElementById("errorAutor").innerHTML = "El Autor no está correcto.<br>";
     } else{
     document.getElementById("errorAutor").innerHTML = "";}
+
+    return success;
+}
+
+function validarEditorial(editorial) {
+    let regex = /[^0-9\.\,\"\?\!\;\:\#\$\%\&\(\)\*\+\-\/\<\>\=\@\[\]\\\^\_\{\}\|\~]+/;
+    const success = regex.test(editorial); 
+    if(!success) {
+        document.getElementById("errorEditorial").innerHTML = "La editorial no está correcta.<br>";
+    } else{
+    document.getElementById("errorEditorial").innerHTML = "";}
 
     return success;
 }
