@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PostData - Registro de usuarios</title>
+
+  <!-- CSS del bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <!-- El estilo del menu, fondo blanco, color de letra activa y normal -->
+  <link rel="stylesheet" href="./css/style.css">
+
+  <!-- Se tiene que añadir la tipografía Raleway, la cuál está en el diseño de figma -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!--nav bar-->
+  <nav id="header" class="navbar navbar-expand-lg navbar-light bg-light bg-white textomenu"></nav>
+  <!--nav bar-->
+
+  <!--   SECTION   CONTENIDO   -->
+  <form id="formEnviar" method="post">
+    <h1 id="tituloH1">CREAR CUENTA</h1>
+
+    <!--   Nombre   -->
+    <label for="nombre" class="etiqueta">Nombre</label>
+    <input id="nombre" name="nombre" type="text" class="campos" placeholder="Ingresa tu nombre" />
+    <!--   Mostrar Alerta de Validacíon   -->
+    <span id="errorNombre" class="error"> </span>
+    <!--   Mostrar Alerta de Validacíon   -->
+
+    <!--   Nombre de Usuario   -->
+    <label for="usuario" class="etiqueta">Nombre de Usuario</label>
+    <input id="usuario" name="usuario" type="text" class="campos" placeholder="Ingresa tu Nombre de Usuario" />
+    <!--   Mostrar Alerta de Validacíon   -->
+    <span id="errorAutor" class="error"> </span>
+    <!--   Mostrar Alerta de Validacíon   -->
+
+    <!--   Email   -->
+    <label for="email" class="etiqueta">Email</label>
+    <input id="email" name="email" type="email" class="campos" placeholder="Ingrese su email" />
+    <!--   Mostrar Alerta de Validacíon   -->
+    <span id="errorEmail" class="error"> </span>
+    <!--   Mostrar Alerta de Validacíon   -->
+
+    <!--   Contraseña   -->
+    <label for="contrasena" class="etiqueta">Contraseña</label>
+    <input id="contrasena" name="contrasena" type="password" class="campos" placeholder="**********" />
+    <!--   Mostrar Alerta de Validacíon   -->
+    <span id="errorContrasena" class="error"> </span>
+    <!--   Mostrar Alerta de Validacíon   -->
+
+    <!--   Confirma Contraseña   -->
+    <label for="contrasenaConfirma" class="etiqueta">Contraseña tu Contraseña</label>
+    <input id="contrasenaConfirma" name="contrasenaConfirma" type="password" class="campos" placeholder="**********" />
+    <!--   Mostrar Alerta de Validacíon   -->
+    <span id="errorContrasenaConfirma" class="error"> </span>
+    <!--   Mostrar Alerta de Validacíon   -->
+
+    <input id="botonEnviar" type="submit" value="Crear Cuenta" style="margin-top: 10px;" />
+  </form>
+  <!--   SECTION   CONTENIDO   -->
+
+    <!--FOOTER-->
+    <footer id="footer"></footer>
+    <!--FOOTER-->
+    
+    <script src="./js/validaciones.js"></script>
+    <script src="./js/registroProductos.js"></script>
+    <script src="js/headerfooter.js"></script> 
+    
+    <!--Siempre de los siempres va abajo. Si no, arroja error-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+      crossorigin="anonymous"></script>
+
+</body>
+
+</html>
