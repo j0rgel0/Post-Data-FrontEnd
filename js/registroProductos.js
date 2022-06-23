@@ -1,30 +1,28 @@
 let botonEnviar = document.querySelector("#botonEnviar");
+let txtNombre = document.getElementById("nombre");
+let txtAutor = document.getElementById("autor");
+let txtEditorial = document.getElementById("editorial");
+let txtISBN = document.getElementById("isbn");
+let txtURL = document.getElementById("urlImagen");
+let txtDescripcion = document.getElementById("descripcion");
+let txtPrecio = document.getElementById("precio");
 
 botonEnviar.addEventListener("click", (event)=> {
     event.preventDefault();
 
-    const datos = Object.fromEntries(new FormData(document.querySelector("#formEnviar")))   
-    const validaciones=[];
-    validaciones.nombre= validarLibro(datos.nombre);
-    validaciones.autor=validarAutor(datos.autor);
-    validaciones.editorial=validarEditorial(datos.editorial);
-    validaciones.isbn=validarIsbn(datos.isbn);
-    validaciones.urlImagen=validarUrl(datos.urlImagen);
-    validaciones.descripcion=validarDescripcion(datos.descripcion);
-    validaciones.precio=validarPrecio(datos.precio);
+    let elemento =  `
+    {"nombre" : "${txtNombre.value}",
+    "autor" : "${txtAutor.value}",
+    "img" : "${txtURL.value}",
+    "editorial" : "${txtEditorial.value}",
+    "descripcion" : "${txtDescripcion.value}",
+    "isbn" : "${txtISBN.value}",
+    "precio" : "${txtPrecio.value}"}`;
     
-    if (Object.values(validaciones).every((value) => value === true)) {
-        var array = JSON.parse(localStorage.getItem("productos") || '[]');
-            array.push(JSON.stringify(datos));
-            localStorage.setItem("productos", JSON.stringify(array));
-    }else{
-        console.log("Las validaciones estan mal");
-    }
+    //JSON a JS
+    datos = JSON.parse(localStorage.getItem("productos"));
+    datos.push(JSON.parse(elemento));
+
+    // Crear de nuevo JSON
+    localStorage.setItem("productos", JSON.stringify(datos));
 });
-
-
-    
-
-
-
-

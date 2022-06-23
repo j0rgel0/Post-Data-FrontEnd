@@ -115,11 +115,22 @@ function addItem(item){
     itemsContainer.innerHTML += itemHTML;
 }
 
-window.localStorage.setItem("productos", JSON.stringify(productos));
-
-window.addEventListener("load", function () {
+if (localStorage.length == 0) {
+    window.localStorage.setItem("productos", JSON.stringify(productos));
+    window.addEventListener("load", function () {
         datos = JSON.parse(localStorage.getItem("productos"));
         datos.forEach(element => {
             addItem(element);
         });
 });
+}
+
+if (localStorage.length > 0) {
+    window.addEventListener("load", function () {
+        datos = JSON.parse(localStorage.getItem("productos"));
+        datos.forEach(element => {
+            addItem(element);
+        });
+});
+}
+
