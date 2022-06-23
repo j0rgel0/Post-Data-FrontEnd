@@ -99,6 +99,17 @@ function validarPrecio(precio) {
     return success;
 }
 
+function validarNombre(nombre) {
+    let regex = /^[0-9]+([\,]?[\s, \d]?[0-9]+)?(\.[0-9]{1,2})?$/;
+    const success = regex.test(nombre); 
+    if(!success) {
+        document.getElementById("errorNombre").innerHTML = "El nombre no está correcto.<br>";
+    } else{
+        document.getElementById("errorNombre").innerHTML = "";}
+    return success;
+}
+
+
 
 
 

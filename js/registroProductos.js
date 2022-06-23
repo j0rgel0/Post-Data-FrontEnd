@@ -14,7 +14,9 @@ botonEnviar.addEventListener("click", (event)=> {
     validaciones.precio=validarPrecio(datos.precio);
     
     if (Object.values(validaciones).every((value) => value === true)) {
-        console.log(datos);  
+        var array = JSON.parse(localStorage.getItem("productos") || '[]');
+            array.push(JSON.stringify(datos));
+            localStorage.setItem("productos", JSON.stringify(array));
     }else{
         console.log("Las validaciones estan mal");
     }
