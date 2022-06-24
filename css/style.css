@@ -213,7 +213,7 @@ textarea {
 
 #errorNombre, #errorEmail, #errorAsunto, #errorMensaje, #errorTelefono, 
 #errorLibro, #errorAutor, #errorisbn, #errorImagen,#errorPrecio,
-#errorDescripcion, #errorEditorial {
+#errorDescripcion, #errorEditorial,#errorContrasenaConfirma,#errorContrasena {
   color: red;
   margin-left: 10px;
   margin-bottom: 10px;
