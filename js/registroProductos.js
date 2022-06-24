@@ -9,7 +9,17 @@ let txtPrecio = document.getElementById("precio");
 
 botonEnviar.addEventListener("click", (event)=> {
     event.preventDefault();
-
+    const validaciones=[];
+     validaciones.nombre= validarLibro(txtNombre.value);
+     validaciones.autor=validarAutor(txtAutor.value);
+     validaciones.editorial=validarEditorial(txtEditorial.value);
+     validaciones.isbn=validarIsbn(txtISBN.value);
+     validaciones.img=validarUrl(txtURL.value);
+     validaciones.descripcion=validarDescripcion(txtDescripcion.value);
+    validaciones.precio=validarPrecio(txtPrecio.value);
+     if (Object.values(validaciones).every((value) => value === true) ){
+         console.log("Hola");
+     }
     let elemento =  `
     {"nombre" : "${txtNombre.value}",
     "autor" : "${txtAutor.value}",

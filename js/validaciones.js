@@ -109,6 +109,26 @@ function validarNombre(nombre) {
     return success;
 }
 
+function validarUsuario(usuario) {
+    let regex = /[a-zA-Z][a-zA-Z0-9-_]{3,32}/;
+    const success = regex.test(usuario); 
+    if(!success) {
+        document.getElementById("errorAutor").innerHTML = "El usuario no está correcto.<br>";
+    } else{
+        document.getElementById("errorAutor").innerHTML = "";}
+    return success;
+}
+ 
+function validarContraseña(contraseña) {
+    let regex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/;
+    const success = regex.test(contraseña); 
+    if(!success) {
+        document.getElementById("errorContrasena").innerHTML = "La contraseña no está correcta.<br>";
+    } else{
+        document.getElementById("errorContrasena").innerHTML = "";}
+    return success;
+}
+
 
 
 
