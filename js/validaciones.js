@@ -129,6 +129,14 @@ function validarContraseña(contraseña) {
     return success;
 }
 
+function validarConfirmaTuContrasena(contrasena,repiteContrasena){
+    const success = contrasena === repiteContrasena ? true : false;
+    if(!success) {
+        document.getElementById("errorContrasenaConfirma").innerHTML = "Las contraseñas no coinciden.<br>";
+    } else{
+        document.getElementById("errorContrasenaConfirma").innerHTML = "";}
+    return success;
+}
 
 
 
