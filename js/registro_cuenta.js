@@ -8,7 +8,7 @@ let txtContrasenaConfirma = document.getElementById("contrasenaConfirma");
 botonEnviar.addEventListener("click", (event)=> {
     event.preventDefault();
     const validaciones=[];
-     //validaciones.nombre=validarNombre(txtNombre.value);
+    validaciones.nombre=validarNombre(txtNombre.value);
     validaciones.usuario=validarUsuario(txtUsuario.value);
     validaciones.email=validarEmail(txtEmail.value);
     validaciones.contraseña=validarContraseña(txtContrasena.value);

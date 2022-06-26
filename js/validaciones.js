@@ -100,7 +100,7 @@ function validarPrecio(precio) {
 }
 
 function validarNombre(nombre) {
-    let regex = /^[0-9]+([\,]?[\s, \d]?[0-9]+)?(\.[0-9]{1,2})?$/;
+    let regex = /[^0-9\.\,\"\?\!\;\:\#\$\%\&\(\)\*\+\-\/\<\>\=\@\[\]\\\^\_\{\}\|\~]+/;
     const success = regex.test(nombre); 
     if(!success) {
         document.getElementById("errorNombre").innerHTML = "El nombre no está correcto.<br>";
@@ -123,7 +123,7 @@ function validarContraseña(contraseña) {
     let regex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/;
     const success = regex.test(contraseña); 
     if(!success) {
-        document.getElementById("errorContrasena").innerHTML = "La contraseña no está correcta.<br>";
+        document.getElementById("errorContrasena").innerHTML = "La contraseña debe contener al menos 8 caracteres, una mayúscula, una minúscula y un número.<br>";
     } else{
         document.getElementById("errorContrasena").innerHTML = "";}
     return success;
