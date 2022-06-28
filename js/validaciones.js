@@ -39,9 +39,11 @@ function validarLibro(libro) {
     let regex = /[^0-9\.\,\"\?\!\;\:\#\$\%\&\(\)\*\+\-\/\<\>\=\@\[\]\\\^\_\{\}\|\~]+/;
     const success = regex.test(libro); 
     if(!success) {
+        document.getElementById("errorLibro").style= "display";
         document.getElementById("errorLibro").innerHTML = "El libro no está correcto.<br>";
     } else{
-        document.getElementById("errorLibro").innerHTML = "";}
+        document.getElementById("errorLibro").style= "display: none";
+    }
     return success;
 }
 
@@ -49,9 +51,11 @@ function validarAutor(autor) {
     let regex = /[^0-9\.\,\"\?\!\;\:\#\$\%\&\(\)\*\+\-\/\<\>\=\@\[\]\\\^\_\{\}\|\~]+/;
     const success = regex.test(autor); 
     if(!success) {
+        document.getElementById("errorAutor").style = "display";
         document.getElementById("errorAutor").innerHTML = "El Autor no está correcto.<br>";
     } else{
-    document.getElementById("errorAutor").innerHTML = "";}
+        document.getElementById("errorAutor").style = "display: none";
+        }
 
     return success;
 }
@@ -60,9 +64,11 @@ function validarEditorial(editorial) {
     let regex = /[^0-9\.\,\"\?\!\;\:\#\$\%\&\(\)\*\+\-\/\<\>\=\@\[\]\\\^\_\{\}\|\~]+/;
     const success = regex.test(editorial); 
     if(!success) {
+        document.getElementById("errorEditorial").style = "display";
         document.getElementById("errorEditorial").innerHTML = "La editorial no está correcta.<br>";
     } else{
-    document.getElementById("errorEditorial").innerHTML = "";}
+        document.getElementById("errorEditorial").style = "display: none";
+    }
 
     return success;
 }
@@ -71,9 +77,11 @@ function validarIsbn(isbn) {
     let regex = /((?:[\dX]{13})|(?:[\d\-X]{17})|(?:[\dX]{10})|(?:[\d\-X]{13}))/;
     const success = regex.test(isbn); 
     if(!success) {
+        document.getElementById("errorisbn").style = "display";
         document.getElementById("errorisbn").innerHTML = "El ISBN no está correcto.<br>";
     } else{
-        document.getElementById("errorisbn").innerHTML = "";}
+        document.getElementById("errorisbn").style = "display: none";
+    }
     return success;
 }
 
@@ -82,9 +90,11 @@ function validarUrl(url) {
     let regex = /[-a-zA-Z0-9@:%_\+.~#?&//=]{2,256}\.[a-z]{2,4}\b(\/[-a-zA-Z0-9@:%_\+.~#?&//=]*)?/;
     const success = regex.test(url); 
     if(!success) {
+        document.getElementById("errorImagen").style = "display";
         document.getElementById("errorImagen").innerHTML = "El URL no está correcto.<br>";
     } else{
-        document.getElementById("errorImagen").innerHTML = "";}
+        document.getElementById("errorImagen").style = "display: none";
+    }
     return success;
 }
 
@@ -92,9 +102,11 @@ function validarDescripcion(descripcion) {
     let regex = /[\w\d\s\.\'\,\-\!\@\#\$\&\*\`\~\[\]\?\<\>\"\:\;\\\/\{\}\|\%\^\(\)\+\=]/;
     const success = regex.test(descripcion); 
     if(!success) {
+        document.getElementById("errorDescripcion").style = "display";
         document.getElementById("errorDescripcion").innerHTML = "La descripción no está correcta.<br>";
     } else{
-        document.getElementById("errorDescripcion").innerHTML = "";}
+        document.getElementById("errorDescripcion").style = "display: none";
+    }
     return success;
 }
 
@@ -102,9 +114,11 @@ function validarPrecio(precio) {
     let regex = /^[0-9]+([\,]?[\s, \d]?[0-9]+)?(\.[0-9]{1,2})?$/;
     const success = regex.test(precio); 
     if(!success) {
+        document.getElementById("errorPrecio").style = "display";
         document.getElementById("errorPrecio").innerHTML = "El precio no está correcto.<br>";
     } else{
-        document.getElementById("errorPrecio").innerHTML = "";}
+        document.getElementById("errorPrecio").style = "display: none";
+    }
     return success;
 }
 
