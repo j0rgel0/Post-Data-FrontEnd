@@ -25,6 +25,7 @@ botonEnviar.addEventListener("click", (event)=> {
         document.getElementById("telefono").value = "";
         document.getElementById("mensaje").value = "";
        
+        swal("Mensaje enviado correctamente", "Gracias por tus comentarios", "success"); //SweetAlert
     }else{
         console.log("Algo ha fallado");
     }
