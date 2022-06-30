@@ -20,7 +20,7 @@ function header(){
 
             <!-- Liga a página de Conócenos -->
             <li class="nav-item">
-              <a class="nav-link" href="./conocenos.html">Conócenos</a>
+              <a class="nav-link" href="./conocenos">Conócenos</a>
             </li>
     
             <!-- Liga a página de Productos -->
