@@ -287,6 +287,20 @@ textarea {
 }
 /* FIN Imagen RegistroUsuario */
 
+
+/* Texto Acerca de nosotros */
+
+.nombreAcerca{
+  font-weight: 600;
+  font-size: 18px;;
+  margin-bottom: 5px;
+}
+.descripcionAcerca{
+  font-size: 16px;
+}
+
+/* Texto Acerca de nosotros */
+
 /* FOOTER */
 #logoFooter {
   width: 110px;

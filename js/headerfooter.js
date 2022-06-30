@@ -17,6 +17,11 @@ function header(){
             <li class="nav-item">
               <a class="nav-link" href="./acerca.html">Nosotros</a>
             </li>
+
+            <!-- Liga a página de Conócenos -->
+            <li class="nav-item">
+              <a class="nav-link" href="./conocenos.html">Conócenos</a>
+            </li>
     
             <!-- Liga a página de Productos -->
             <li class="nav-item">
