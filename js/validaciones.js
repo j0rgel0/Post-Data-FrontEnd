@@ -1,13 +1,11 @@
 function validarCadena(valor, nombreCampo){
-    let success = false;
-
-    if ((valor.length < 3) || !isNaN(valor) ){
+    let success = (valor.length < 3) || !isNaN(valor) ? false : true;
+    if (!success){
         document.getElementById(`error${nombreCampo}`).style = 'display';
         document.getElementById(`error${nombreCampo}`).innerHTML = `Tu ${nombreCampo} no es correcto .<br>`;
     } else {
         document.getElementById(`error${nombreCampo}`).style = 'display:none';
     }
-
     return success;
 }
 // Función utilizando expresiones regulares para validar email
@@ -74,7 +72,7 @@ function validarEditorial(editorial) {
 }
 
 function validarIsbn(isbn) {
-    let regex = /^(?:ISBN(?:-1[03])?:? )?(?=[0-9X]{10}$|(?=(?:[0-9]+[- ]){3})[- 0-9X]{13}$|97[89][0-9]{10}$|(?=(?:[0-9]+[- ]){4})[- 0-9]{17}$)(?:97[89][- ]?)?[0-9]{1,5}[- ]?[0-9]+[- ]?[0-9]+[- ]?[0-9X]$/;
+    let regex = /((?:[\dX]{13})|(?:[\d\-X]{17})|(?:[\dX]{10})|(?:[\d\-X]{13}))/;
     const success = regex.test(isbn); 
     if(!success) {
         document.getElementById("errorisbn").style = "display";
