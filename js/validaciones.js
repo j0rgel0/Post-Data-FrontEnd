@@ -131,18 +131,6 @@ function validarNombre(nombre) {
     }
     return success;
 }
-
-function validarUsuario(usuario) {
-    let regex = /[a-zA-Z][a-zA-Z0-9-_]{3,32}/;
-    const success = regex.test(usuario); 
-    if(!success) {
-        document.getElementById("errorAutor").style = 'display';
-        document.getElementById("errorAutor").innerHTML = "El usuario no está correcto.<br>";
-    } else{
-        document.getElementById("errorNombre").style = 'display:none';
-    }
-    return success;
-}
  
 function validarContraseña(contraseña) {
     let regex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/;
