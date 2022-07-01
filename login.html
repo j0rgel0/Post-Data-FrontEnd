@@ -30,11 +30,11 @@
   <section class="contenido">
     <div class="columnas">
       <form id="formEnviar" method="post">
-        <h1 id="tituloH1">Iniciar sesión</h1>
+        <h1 id="tituloH1" style="margin-top: 45%;">INICIAR SESIÓN</h1>
 
         <!--   Email   -->
-        <label for="email" class="etiqueta" id="email_sesion">Email</label>
-        <input id="email" name="email" type="email" class="campos" placeholder="Ingrese su email" />
+        <label for="email" class="etiqueta" id="email_sesion" style="margin-top: 5%;">Email</label>
+        <input id="email" name="email" type="email" class="campos" placeholder="Ingresa tu email" />
         <!--   Mostrar Alerta de Validacíon   -->
         <div class="alert alert-danger" role="alert" style="display: none;" id="errorEmail"></div>
         <!--   Mostrar Alerta de Validacíon   -->
@@ -45,9 +45,15 @@
         <!--   Mostrar Alerta de Validacíon   -->
         <!-- <div class="alert alert-danger" role="alert" style="display: none;" id="errorContrasena"></div>
           Mostrar Alerta de Validacíon   -->
-
+        <p>
+          <a href="#" class="link" style="margin-left: 0.5%;">Olvidé la contraseña</a>
+          <!--Link de redireccion funcion olvide la contraseña-->
+        </p>
         <input id="botonEnviar" type="submit" value="Iniciar sesión" style="margin-top: 10px;" />
       </form>
+      <p>
+        <a href='./registro_cuenta.html' class="link" style="margin-left: 33%;">¿No tienes una cuenta? Crear</a>
+      </p>
       <!--   SECTION   CONTENIDO   -->
     </div>
     <div class="columnas imagen">
