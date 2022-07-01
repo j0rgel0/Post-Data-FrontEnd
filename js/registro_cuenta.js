@@ -19,11 +19,8 @@ botonEnviar.addEventListener("click", (event)=> {
         "email" : "${txtEmail.value}",
         "contrasenia" : "${txtContrasena.value}"}`;
         
-<<<<<<< HEAD
-=======
         swal("¡Adelante!", "Cuenta creada exitosamente", "success"); //SweetAlert
         
->>>>>>> a3564ec (Se añadio Sweetalert a contacto y registro usuario)
         // Crear un nuevo JSON
         localStorage.setItem("usuario", JSON.stringify(datos));
     
