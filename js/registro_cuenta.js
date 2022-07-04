@@ -3,6 +3,7 @@ let txtNombre = document.getElementById("nombre");
 let txtEmail = document.getElementById("email");
 let txtContrasena = document.getElementById("contrasena");
 let txtContrasenaConfirma = document.getElementById("contrasenaConfirma");
+let datos=[];
 
 botonEnviar.addEventListener("click", (event)=> {
     event.preventDefault();
@@ -14,10 +15,13 @@ botonEnviar.addEventListener("click", (event)=> {
     console.log(validaciones);
 
     if (Object.values(validaciones).every((value) => value === true) ){
-        let datos =  `
+    
+        let elemento =  `
         {"nombre" : "${txtNombre.value}",
         "email" : "${txtEmail.value}",
         "contrasenia" : "${txtContrasena.value}"}`;
+
+        datos.push(JSON.parse(elemento))
         
         swal("¡Adelante!", "Cuenta creada exitosamente", "success"); //SweetAlert
         
