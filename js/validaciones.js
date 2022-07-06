@@ -26,7 +26,7 @@ function validarTelefono(telefono) {
     const success = regex.test(telefono); 
     if(!success) {
         document.getElementById("errorTelefono").style = 'display';
-        document.getElementById("errorTelefono").innerHTML = "El telefono no está correcto.<br>";
+        document.getElementById("errorTelefono").innerHTML = "El teléfono no está correcto.<br>";
     } else {
         document.getElementById("errorTelefono").style = 'display:none';
     }
