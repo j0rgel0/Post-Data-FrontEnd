@@ -91,6 +91,16 @@ body {
     margin-left: 70px;
 }
 
+.link {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30 px;
+    line-height: 20px;
+    color: #405BF5;
+    margin-left: 300px;
+  }
+
 /* Acomodar el NAV */
 .navbar-nav {
     margin: auto;
