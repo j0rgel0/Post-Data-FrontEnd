@@ -76,8 +76,14 @@ body {
 
 .logo {
     margin-top: 7px;
-    margin-left: 70px;
-    width: 120px;
+    /* margin-left: 70px; */
+    margin-left: 1%;
+    width: 150px;
+}
+
+.dropdown > .dropdown-item:hover {
+    background: rgb(45, 50, 51);
+    color: white;
 }
 
 /* Estilo del texto del menú */
@@ -85,7 +91,7 @@ body {
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 600;
-    font-size: 22.26px; /* originalmente en figma dice 25.26*/
+    font-size: 20px;
     line-height: 30px;
     color: #405BF5;
     margin-left: 70px;
@@ -99,11 +105,25 @@ body {
     line-height: 20px;
     color: #405BF5;
     margin-left: 300px;
-  }
+}
 
 /* Acomodar el NAV */
 .navbar-nav {
     margin: auto;
+}
+
+/* [type="submit"]{
+    background-color: #ffffff;
+} */
+
+/* Icono USER menú */
+#imagenUserMenu {
+    width: 30px;
+    margin-top: 8px;
+}
+#imagenCart {
+    width: 30px;
+    margin-top: 0;
 }
 
 /* Añadir espacio entre elementos del menu */
@@ -112,7 +132,7 @@ body {
 }
 
 .navbar-nav {
-    margin-top: -10px;
+    margin-top: 20px;
 }
 nav ul {
     margin-top: 0;
@@ -159,7 +179,14 @@ button:focus {
 /* Título del header  */
 #tituloH1 {
     color: #405BF5;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#tituloH1.contacto {
+    color: #405BF5;
+    margin-top: -15px;
+    margin-bottom: -20px;
     text-align: center;
 }
 
@@ -240,6 +267,10 @@ textarea {
     margin-bottom: 10px;
 }
 
+#mensajeAbajoBoton {
+    margin-top: -20px;
+}
+
 /* CSS del formulario  */
 /* ---------------- */
 
@@ -247,46 +278,51 @@ textarea {
 /* Contenedor del producto  */
 #contenedorProducto {
     border: 1px solid rgb(136, 132, 132);
-    margin: 5px;
+    margin: 10px;
     box-shadow: rgba(187, 189, 192, 0.35) 0 1px 10px;
     width: 60%;
+    padding: 0;
 }
 
-#imagenProducto:hover {
-    opacity: 0.2;
+.card-body {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 10px;
 }
 
-#contenedorProducto #botonAnadir {
-    color: rgb(0, 0, 0);
-    background-color: #ffffff;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 40px;
-    width: 140px;
-    height: 40px;
-    border-radius: 10px;
-    opacity: 0;
-    transform: translateX(-50%);
-    position: absolute;
-    bottom: 50px;
-    left: 50%;
-    transition: all 0.4s ease-out;
-    text-align: center;
-    text-decoration: none;
+.card-footer {
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+    border-top: 0;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+button.btn {
+    margin-top: auto;
+}
+
+#imagenProducto {
+    width: 200px;
+    height: 290px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+
+#contenedorProducto:hover,
+#imagenProducto:hover #botonAnadir {
     box-shadow: rgba(0, 0, 0, 0.35) 0 1px 30px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
 }
 
-#contenedorProducto #botonAnadir:hover {
-    background-color: #000000;
-    color: rgb(255, 255, 255);
-    border: 0;
+#modalNombre {
+    margin-top: 550px;
 }
 
-#contenedorProducto:hover #botonAnadir {
-    opacity: 1;
-    bottom: 200px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0 1px 30px;
-}
 /* FIN Contenedor del producto  */
 
 /* CONFIGURACIÓN DE COLUMNAS */
@@ -297,12 +333,13 @@ textarea {
 .columnas {
     flex: 50%;
     padding: 10px;
+    margin-top: -40px;
 }
 /* FIN CONFIGURACIÓN DE COLUMNAS */
 
 /* Imagen RegistroUsuario */
 #imagenRegistro {
-    margin-top: 140px;
+    margin-top: 60px;
     margin-left: -10%;
     width: 100%
 }
@@ -364,6 +401,12 @@ footer {
     /* Imagen RegistroUsuario */
     .columnas.imagen {
         display: none;
+    };
+
+    .columnas {
+        flex: 40%;
+        padding: 10px;
+        margin-top: -40px;
     };
     /* FIN Imagen RegistroUsuario */
 

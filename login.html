@@ -26,14 +26,15 @@
   <nav id="header" class="navbar navbar-expand-lg navbar-light bg-light bg-white textomenu"></nav>
   <!--nav bar-->
 
+  <div class="p-3">
   <!--   SECTION   CONTENIDO   -->
   <section class="contenido">
     <div class="columnas">
       <form id="formEnviar" method="post">
-        <h1 id="tituloH1" style="margin-top: 45%;">INICIAR SESIÓN</h1>
+        <h1 id="tituloH1">INICIAR SESIÓN</h1>
 
         <!--   Email   -->
-        <label for="email" class="etiqueta" id="email_sesion" style="margin-top: 5%;">Email</label>
+        <label for="email" class="etiqueta" id="email_sesion">Email</label>
         <input id="email" name="email" type="email" class="campos" placeholder="Ingresa tu email" />
         <!--   Mostrar Alerta de Validacíon   -->
         <div class="alert alert-danger" role="alert" style="display: none;" id="errorEmail"></div>
@@ -50,10 +51,10 @@
           <a href="#" class="link" style="margin-left: 0.5%;">Olvidé la contraseña</a>
           <!--Link de redireccion funcion olvide la contraseña-->
         </p>
-        <input id="botonEnviar" type="submit" value="Iniciar sesión" style="margin-top: 10px;" />
+        <input id="botonEnviar" type="submit" value="Iniciar sesión"/>
       </form>
-      <p>
-        <a href='./registro_cuenta.html' class="link" style="margin-left: 33%;">¿No tienes una cuenta? Crear</a>
+      <p id="mensajeAbajoBoton" class="text-center">
+        <a href='./registro_cuenta.html'>¿No tienes una cuenta? Crear</a>
       </p>
       <!--   SECTION   CONTENIDO   -->
     </div>
@@ -63,7 +64,7 @@
       <!--   SECTION   IMAGEN   -->
     </div>
   </section>
-
+</div>
 
 
   <!--FOOTER-->

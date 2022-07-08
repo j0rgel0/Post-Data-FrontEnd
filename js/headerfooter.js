@@ -5,7 +5,7 @@ function header(){
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="collapse navbar-collapse " id="navbarNav">
           <ul class="navbar-nav mr-auto">
     
             <!-- Liga a página de Inicio -->
@@ -14,13 +14,14 @@ function header(){
             </li>
     
             <!-- Liga a página de Nosotros -->
-            <li class="nav-item">
-              <a class="nav-link" href="./acerca.html">Nosotros</a>
-            </li>
-
-            <!-- Liga a página de Conócenos -->
-            <li class="nav-item">
-              <a class="nav-link" href="./conocenos/">Conócenos</a>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Nosotros</a>
+                
+                <!-- Para generar otro enlace en el menú crea otro contenedor div. -->
+                <div class="dropdown-menu dropdown" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="./acerca.html">Desarrolladores</a>
+                  <a class="dropdown-item" href="./conocenos/">Sobre el proyecto</a>
+                </div>
             </li>
     
             <!-- Liga a página de Productos -->
@@ -33,12 +34,32 @@ function header(){
               <a class="nav-link" href="./contacto.html">Contacto</a>
             </li>
     
-            <!-- Liga a página de login -->
-            <li class="nav-item">
-              <a class="nav-link" href="./login.html">Login</a>
+            <!-- Liga a página de Login y Registro -->
+            <li class="nav-item dropdown">
+                <a class="nav-item dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img id="imagenUserMenu" src="./img/user.png"></a>
+                
+                <!-- Para generar otro enlace en el menú crea otro contenedor div. -->
+                <div class="dropdown-menu dropdown" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="./login.html">Inicio de sesión</a>
+                  <a class="dropdown-item" href="./registro_cuenta.html">Registro</a>
+                </div>
+            </li>
+
+            <!-- Apartado Shopping Cart -->
+            <div class="d-flex">
+              <a class="nav-link" href="./carrito.html">
+                <button class="btn btn-outline-dark carrito">
+                    <i class="bi-cart-fill me-1"></i>
+                    <span id="contadorProductosNavBar" class="badge bg-dark text-white ms-1 ">0</span>
+                </button>
+              </a>
+            </div>
+            <!-- Apartado Shopping Cart -->
+
             </li>
           </ul>
         </div>
+        
         `;
     const itemsContainer = document.getElementById("header");
     itemsContainer.innerHTML += headerHTML;
@@ -72,3 +93,39 @@ function footer(){
 
 header();
 footer();
+
+let contador = 0;
+let agregar = document.getElementById("btnAgregar");
+let datosCarrito = [];
+
+//Cargando se actualiza el número de productos añadidos.
+if (localStorage.getItem("contadorProductos")<=0) {
+  contador=0;
+  localStorage.setItem("contadorProductos", contador)
+} // if  contadorProductos
+
+contador = parseInt(localStorage.getItem("contadorProductos"));
+document.getElementById("contadorProductosNavBar").innerHTML = contador;
+document.getElementById("contadorProductosModal").innerHTML = contador;
+//
+
+// Botón que añade producto
+agregar.addEventListener("click", (event) => {
+event.preventDefault();
+
+// Se suma en 1
+contador++;
+//
+
+//Imprime el contador de los productos en el carrito de compras
+document.getElementById("contadorProductosNavBar").innerHTML = contador;
+document.getElementById("contadorProductosModal").innerHTML = contador;
+localStorage.setItem("contadorProductos", contador);
+//
+let isbn = document.getElementsByClassName("modalISBNhide")[0].value;
+
+cargarCarrito(isbn);
+
+});
+
+
