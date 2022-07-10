@@ -58,48 +58,29 @@
       
             </div>
             <div class="col-md-8 order-md-1">
-              <h4 class="mb-3">Agregar Productos</h4>
+              <h4 class="mb-3">Carrito de compras</h4>
       
               <div class="alert alert-danger fade show" style="display:none" role="alert" id="alertValidaciones">
                 <p id="alertValidacionesTexto"></p>
               </div>
       
-              <form class="needs-validation">
-                <div class="row">
-                  <div class="col-md-6 mb-3">
-                    <label for="Name">Nombre</label>
-                    <input class="campo" type="text" class="form-control" autofocus id="Name" placeholder="" value=""
-                      required>
-                    <div class="invalid-feedback">
-                      Nombre inválido
-                    </div>
-                  </div>
-                  <div class="col-md-6 mb-3">
-                    <label for="Number">Cantidad</label>
-                    <input class="campo" type="text" class="form-control" id="Number" placeholder="" value="" required>
-                    <div class="invalid-feedback">
-                      Cantidad inválida
-                    </div>
-                  </div>
-                </div>
-                <button id="btnAgregar1" class="btn btn-primary btn-lg btn-block" type="button">Agregar</button>
-                <hr class="mb-4">
-      
+
                 <!--  Insertar tabla aquí -->
                 <table class="table table-bordered" id="tablaListaCompras">
                   <thead>
                     <tr>
                       <th scope="col">#</th>
                       <th scope="col">Nombre</th>
-                      <th scope="col">Cantidad</th>
+                      <th scope="col">Autor</th>
                       <th scope="col">Precio</th>
                     </tr>
                   </thead>
                   <tbody>
-      
                   </tbody>
                 </table>
-              </form>
+                <input id="botonEnviar" type="submit" value="Realizar compra" style="margin-top: 10px;" />
+                <input id="botonLimpiar" type="submit" value="Borrar carrito" style="margin-top: 10px;" />
+
             </div>
           </div>
       
@@ -120,6 +101,8 @@
     <!--FOOTER-->
     <script src="./js/headerfooter.js"></script> 
     <script src="./js/carrito.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
     <!--Siempre de los siempres va abajo. Si no, arroja error-->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
