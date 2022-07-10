@@ -144,7 +144,7 @@ window.addEventListener("load", function () {
         );
         
         datos.forEach(element => {
-            total+=parseFloat(element.precio);
+            total+=parseFloat(element.cantidad)*parseFloat(element.precio);
         }
         );
         document.getElementById("precioTotal").innerHTML ="$"+ total +" MXN";
