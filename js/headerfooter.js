@@ -40,8 +40,8 @@ function header(){
                 
                 <!-- Para generar otro enlace en el menú crea otro contenedor div. -->
                 <div class="dropdown-menu dropdown" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="./login.html">Inicio de sesión</a>
-                  <a class="dropdown-item" href="./registro_cuenta.html">Registro</a>
+                  <a class="dropdown-item" href="./login.html">Inicia de sesión</a>
+                  <a class="dropdown-item" href="./registro_cuenta.html">Regístrate</a>
                 </div>
             </li>
 
@@ -49,7 +49,7 @@ function header(){
             <div class="d-flex">
               <a id="carritoNavbar" class="nav-link" href="./carrito.html">
                 <button class="btn btn-outline-dark carrito">
-                    <i class="bi-cart-fill me-1"></i>
+                    <i class="bi-cart-fill me-1"></i> Artículos 
                     <span id="contadorProductosNavBar" class="badge bg-dark text-white ms-1 ">0</span>
                 </button>
               </a>

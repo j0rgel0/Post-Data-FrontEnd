@@ -457,6 +457,22 @@ h1,h2,h3,h4,h5,h6,
     font-weight: 450;
 }
 
+#tituloIndex{
+    padding: 0;
+    margin: 0;
+    font-size: 6vw;
+}
+
+#mensajeIndex{
+    font-weight: 450;
+}
+
+.jumbotron{
+    height: 200px;
+    padding: 0;
+    padding-top: 20px;
+}
+
 #anchoLetra{
     font-weight: 400;
     font-size: 18px;

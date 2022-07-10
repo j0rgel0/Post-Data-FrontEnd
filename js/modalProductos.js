@@ -43,7 +43,6 @@
         datosCarrito.push(JSON.parse(elemento));
         localStorage.setItem("elementosCarrito", JSON.stringify(datosCarrito));
         localStorage.setItem("objeto", JSON.stringify(datosObjeto));
-        console.log(datosObjeto);
         swal("Producto añadido correctamente", "", "success"); //SweetAlert
        
     }
