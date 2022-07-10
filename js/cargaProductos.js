@@ -95,7 +95,6 @@ const productos = [{
     "isbn": "9786074532210",
     "precio": "150.00"
 }];
-if (!localStorage.getItem('productos')) {
-    window.localStorage.setItem("productos", JSON.stringify(productos));
-}
-
+// if (!localStorage.getItem('productos')) {
+//     window.localStorage.setItem("productos", JSON.stringify(productos));
+// }

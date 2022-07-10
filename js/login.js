@@ -2,9 +2,6 @@ let botonEnviar = document.querySelector("#botonEnviar");
 let txtEmail = document.getElementById("email");
 let txtContrasena = document.getElementById("contrasena");
 
-
-
-
 botonEnviar.addEventListener("click", (event)=> {
     event.preventDefault();
     const validaciones=[];

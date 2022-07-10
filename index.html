@@ -1,34 +1,44 @@
-<!doctype html>
-<html lang="es">
-
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+  <!DOCTYPE html>
+  <html lang="es">
+  
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>PostData - Productos</title>
+  
+      <!-- CSS del bootstrap -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
     integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <title>Home Page</title>
-</head>
-
-<body>
+  
+      <!-- El estilo del menu, fondo blanco, color de letra activa y normal -->
+      <link rel="stylesheet" href="./css/style.css">
+  
+      <!-- Se tiene que añadir la tipografía Raleway, la cuál está en el diseño de figma -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+  
+  </head>
+  
+  <body>
   <!--NAVBAR-->
   <nav id="header" class="navbar navbar-expand-lg navbar-light bg-light bg-white textomenu"></nav>
   <!--NAVBAR-->
+
+
   <!--CARRUSEL-->
-  <div class="hero vh-100 d-flex align-items-center">
+  <div class="hero p-5 d-flex align-items-center">
     <div class="container">
       <div class="row">
         <div class="col-lg-7 mx-auto text-center">
           <h1 class="display-4 text-white">Bienvenido</h1>
-          <p class="text-white anchoLetra mb-2">En PostData estamos contentos de que estes aquí,
+          <p id="anchoLetra" class="text-white mb-2">En PostData estamos contentos de que estes aquí,
             esperamos que nuestro catálogo sea de tu agrado, trayendo siempre los mejores títulos a los mejores precios.
           </p>
-          <a href="#Comienza" class="btn btn-primary rounded">Comienza</a>
+          <!-- <a href="#Comienza" class="btn btn-primary rounded">Comienza</a> -->
           <a href="acerca.html" class="btn btn-outline-light ml-2 rounded">Conócenos</a>
         </div>
       </div>
@@ -36,13 +46,19 @@
   </div>
 
   <section id="header" class="jumbotron text-center">
-    <h1 id="Comienza" class="display-3 text-center" style="font-size: 8vw;">Novedades</h1>
+    <h1 id="Comienza" class="display-3 text-center p-0" style="font-size: 6vw;">Novedades</h1>
   </section>
-  <!-- NOVEDADES -->
-  <div class=" container">
-    <div class="row" id="list-items"> </div>
-  </div>
 
+  <!-- NOVEDADES -->
+  <section>
+    <div>
+        <div id="list-items" class="row justify-content-center">
+        </div>
+
+    </div>
+  </section>
+  <br>
+  <!-- NOVEDADES -->
 
   <!-- Datos de Carrusel -->
   <section id="header" class="jumbotron text-center">
@@ -83,20 +99,89 @@
     </div>
   </div>
 
-  <!--FOOTER-->
-  <footer id="footer"></footer>
-  <!--FOOTER-->
 
-  <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-  <script src="./js/cargaProductos.js"></script>
-  <script src="./js/index.js"></script>
-  <script src="./js/headerfooter.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
-    crossorigin="anonymous"></script>
+        <!-- Modal -->
+        <div class="modal fade" id="isbn" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+  
+              <div class="modal-content">
+                  <div class="modal-header">
+  
+                      <!-- <h5 class="modal-title mt-2" id="exampleModalLabel">Detalle del libro</h5> -->
+  
+                      <!-- Apartado Shopping Cart -->
+                      <div class="d-flex">
+                          <a class="nav-link" href="./carrito.html">
+                              <button class="btn btn-outline-dark carrito">
+                                  <i class="bi-cart-fill me-1"></i>
+                                  Resumen del carrito:
+                                  <span id="contadorProductosModal" class="badge bg-dark text-white ms-1 ">0</span>
+                              </button>
+                          </a>
+                      </div>
+                      <!-- Apartado Shopping Cart -->
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                      </button>
+                  </div>
+                  <div class="modal-body">
+  
+                      <div class="text-center">
+                          <section class="contenido">
+                              <div class="columnas">
+                                  <!-- columna1 -->
+                                  <img id="imagenProducto" class="shadow-sm card-img-top mt-4 modalImagen" src="" />
+  
+                                  <!-- columna1 -->
+                              </div>
+  
+                              <div class="columnas">
+                                  <!-- columna2 -->
+                                  <h5 class="ml-0 mb-0 modalNombre" style="margin-top: 70px;"></h5>
+                                  <small class="text-muted modalAutor"></small>
+                                  <p class="modalISBN"></p>
+                                  <input class="modalISBNhide" type="hidden" value="">
+                                  <h5 class="mb-3 modalPrecio"></h5>
+                                  <button id="btnAgregar" type="button"
+                                      class="btn btn-outline-dark mt-auto modalAgregar">Añadir al carrito</button>
+                              </div>
+  
+                          </section>
+                          <!-- Abajo de las dos columnas -->
+                          <p class="text-justify mt-0 modalDescripcion"> <strong>Descripción:</strong>
+  
+                          </p>
+                      </div>
+                      <div class="modal-footer m-0">
+                          <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                      </div><!-- modalfooter -->
+                  </div><!-- modalbody -->
+  
+              </div><!-- modalcontent -->
+          </div><!-- modaldialog -->
+      </div><!-- modalcontent -->
+      <!-- Modal -->
+  
+  
+  
+      <!--FOOTER-->
+      <footer id="footer"></footer>
+      <!--FOOTER-->
+
+      <script src="./js/headerfooter.js"></script>
+      <script src="./js/cargaProductos.js"></script>
+      <script src="./js/index.js"></script>
+      <script src="./js/modalProductos.js"></script>
+      <script src="./js/modalCarrito.js"></script>
+  
+      <!--Siempre de los siempres va abajo. Si no, arroja error-->
+      <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+          integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+          crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+          crossorigin="anonymous"></script>
+
 </body>
 
 </html>

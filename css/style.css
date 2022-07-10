@@ -123,7 +123,11 @@ body {
 }
 #imagenCart {
     width: 30px;
-    margin-top: 0;
+    margin-top: 0px;
+}
+
+#carritoNavbar {
+    margin-top: -7px;
 }
 
 /* Añadir espacio entre elementos del menu */
@@ -190,7 +194,12 @@ button:focus {
     text-align: center;
 }
 
-
+#tituloH1.registroProducto {
+    color: #405BF5;
+    margin-top: -50px;
+    margin-bottom: 15px;
+    text-align: center;
+}
 /* -----------------  */
 /* CSS del formulario  */
 
@@ -410,8 +419,14 @@ footer {
     };
     /* FIN Imagen RegistroUsuario */
 
+    #anchoLetra{
+        font-weight: 400;
+        font-size: 18px;
+    }
+
 }
 
+/* Se establecen variables */
 :root{
     --body:#888;
     --dark: #21252f;
@@ -427,13 +442,14 @@ body{
 }
  
 h1,h2,h3,h4,h5,h6,
-.display-4{
+.display-3{
     color: var(--dark);
     font-weight: 450;
 }
 
-.anchoLetra{
+#anchoLetra{
     font-weight: 400;
+    font-size: 18px;
 }
 
 a{
@@ -448,6 +464,8 @@ a{
     background-attachment: fixed;
     position:relative;
     z-index: 2;
+    width: 100vw;
+    padding: 150px;
 }
 
 .hero::after{
