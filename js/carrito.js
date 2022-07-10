@@ -122,20 +122,18 @@ window.addEventListener("load", function () {
 
               <div class="columnas">
               <!-- columna2 -->
-              <h5 class="ml-0 mb-0 modalNombre" style="margin-top: 70px;">${element.nombre}</h5>
-              <small class="text-muted">${element.autor}</small>
-              <p class="modalISBN">${element.isbn}</p>
+              <h5 id="nombreCarrito" class="ml-0 mb-0 modalNombre">${element.nombre}</h5>
+              <small class="text-muted">${element.autor}</small><br>
+              <span class="text-dark" class="modalISBN"><strong>ISBN:</strong> ${element.isbn}</span><br>
+              <span id="movilPrecio" class="text-dark"><strong>Precio:</strong>$${element.precio} MXN</span>
+              <span id="movilCantidad" class="text-dark"><strong>Cantidad:</strong> ${element.cantidad}</span>
             </div>
           </section>
             </td>
-            <td class="text-center text-dark" style="
-            display: table-cell;
-            vertical-align: middle;">${
+            <td id="tdCantidad" class="text-center text-dark">${
               element.cantidad
           }</td>
-            <td class="text-dark text-center" style="
-            display: table-cell;
-            vertical-align: middle;">${
+            <td id="tdPrecio" class="text-dark text-center">${
                 "$ " + element.precio + " MXN"
             }</td>
             </tr> 

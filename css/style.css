@@ -325,7 +325,7 @@ button.btn {
     width: 150px;
     height: 200px;
     display: block;
-    margin-top: 40px;
+    margin-top: 60px;
     margin-left: auto;
     margin-right: auto;
     padding: 0px;
@@ -407,6 +407,18 @@ footer {
     font-family: 'DM Sans', sans-serif;
 }
 
+#tdCantidad, #tdPrecio{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#nombreCarrito{
+    margin-top: 70px;
+}
+#movilCantidad, #movilPrecio{
+    display: none;
+}
+
 @media(max-width: 900px) {
     .logo {
         width: 30%;
@@ -429,9 +441,28 @@ footer {
     };
     /* FIN Imagen RegistroUsuario */
 
-    #anchoLetra{
+    .anchoLetra{
         font-weight: 400;
         font-size: 18px;
+    }
+    #thCantidad, #thPrecio, #tdCantidad, #tdPrecio{
+        display: none;
+    }
+    #movilCantidad, #movilPrecio{
+        display: block;
+    }
+    #nombreCarrito{
+        margin-top: 40px;
+    }
+
+    #imagenProductoCarrito {
+        width: 150px;
+        height: 200px;
+        display: block;
+        margin-top: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0px;
     }
 
 }
