@@ -24,10 +24,11 @@
            let elemento = `{
             "img" : "${element.img}",
             "nombre" : "${element.nombre}",
+            "cantidad" : 1, 
             "autor" : "${element.autor}",
             "isbn" : "${element.isbn}",
             "precio" : "${element.precio}",
-            "id" : "${contador}"
+            "id" : "${contador2}"
         }`; 
         console.log(contador2);
         let objeto = `{

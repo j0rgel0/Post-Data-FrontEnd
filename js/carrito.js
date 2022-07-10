@@ -78,18 +78,47 @@ window.addEventListener("load", function () {
         total.innerHTML = costoTotal;
     } // if precioTotal
     
-    if (localStorage.getItem("elementosCarrito") != null) {
+    const nuevoArreglo = JSON.parse(localStorage.getItem("elementosCarrito"));
+    const AgrupayAnade = nuevoArreglo => {
+      const nuevoJSON = [];
+      nuevoArreglo.forEach(elemento => {
+         if (!this[elemento.isbn]) {
+          contador2++;
+            this[elemento.isbn] = {
+               id: contador2,
+               autor: elemento.autor,
+               img: elemento.img,
+               isbn: elemento.isbn,
+               nombre: elemento.nombre, 
+               precio: elemento.precio, 
+               cantidad: 0
+            };
+            nuevoJSON.push(this[elemento.isbn]);
+            localStorage.setItem("carritoAgrupado", JSON.stringify(nuevoJSON));
+         };
+         this[elemento.isbn].cantidad += +elemento.cantidad;
+         localStorage.setItem("carritoAgrupado", JSON.stringify(nuevoJSON));
+      }, {});
+      return nuevoJSON;
+   }
+  AgrupayAnade(nuevoArreglo);
+  
+    if (localStorage.getItem("carritoAgrupado") != null) {
         total = 0;
-        datos = JSON.parse(localStorage.getItem("elementosCarrito"));
+        datos = JSON.parse(localStorage.getItem("carritoAgrupado"));
         datos.forEach(element => {
             cuerpoTabla[0].innerHTML += `<tr>
             <th scope="row">${element.id}</th>
+            <td><img id="imagenProducto" class="shadow-sm card-img-top mt-4 modalImagen" src="${element.img}" /></td>
             <td>${
                 element.nombre
             }</td>
             <td>${
                 element.autor
             }</td>
+            <td class="text-center">${
+              element.cantidad
+          }</td>
             <td>${
                 "$ " + element.precio + " MXN"
             }</td>
