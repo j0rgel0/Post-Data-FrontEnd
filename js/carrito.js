@@ -108,21 +108,40 @@ window.addEventListener("load", function () {
         datos = JSON.parse(localStorage.getItem("carritoAgrupado"));
         datos.forEach(element => {
             cuerpoTabla[0].innerHTML += `<tr>
-            <th scope="row">${element.id}</th>
-            <td><img id="imagenProducto" class="shadow-sm card-img-top mt-4 modalImagen" src="${element.img}" /></td>
-            <td>${
-                element.nombre
-            }</td>
-            <td>${
-                element.autor
-            }</td>
-            <td class="text-center">${
+            <div >
+            <th class="text-dark" scope="row" style="
+            display: table-cell;
+            vertical-align: middle;">${element.id}</th><div>
+            <td>
+            <section class="contenido">
+            <div class="columnas">
+              <!-- columna1 -->
+              <img id="imagenProductoCarrito" src="${element.img}" />
+              <!-- columna1 -->
+              </div>
+
+              <div class="columnas">
+              <!-- columna2 -->
+              <h5 class="ml-0 mb-0 modalNombre" style="margin-top: 70px;">${element.nombre}</h5>
+              <small class="text-muted">${element.autor}</small>
+              <p class="modalISBN">${element.isbn}</p>
+            </div>
+          </section>
+            </td>
+            <td class="text-center text-dark" style="
+            display: table-cell;
+            vertical-align: middle;">${
               element.cantidad
           }</td>
-            <td>${
+            <td class="text-dark text-center" style="
+            display: table-cell;
+            vertical-align: middle;">${
                 "$ " + element.precio + " MXN"
             }</td>
-            </tr> `;
+            </tr> 
+            
+
+            `;
         }
         );
         

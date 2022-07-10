@@ -29,15 +29,15 @@
   <nav id="header" class="navbar navbar-expand-lg navbar-light bg-light bg-white textomenu"></nav>
   <!--nav bar-->
     
-    <!--  Contenedor de todo el contenido -->
+  <div class="p-0">
+    <!--   SECTION   CONTENIDO   -->
     <section>
-        <h1 id="tituloH1">Resumen de compra</h1>
 
-        <div class="container">
+        <div class="container mt-4">
           <div class="row">
             <div class="col-md-4 order-md-4 mb-4">
               <h4 class="d-flex justify-content-between align-items-center mb-3">
-                <span class="text-muted">Resumen</span>
+                <h4 class="mb-3">Resumen de compra</h4>
                 <span class="badge badge-danger badge-pill" id="contadorProductos">0</span>
               </h4>
       
@@ -55,7 +55,12 @@
                   <span class="text-muted" id="precioTotal">$0</span>
                 </li>
               </ul>
-      
+            <div style="display: flex;
+            align-items: center;
+            justify-content: center;">
+              <button id="botonEnviar" type="button" class="btn btn-outline-dark mt-auto mr-3">Realizar compra</button>
+              <button id="botonLimpiar" type="button" class="btn btn-outline-dark mt-auto">Borrar carrito</button>
+            </div>
             </div>
             <div class="col-md-8 order-md-1">
               <h4 class="mb-3">Carrito de compras</h4>
@@ -66,13 +71,11 @@
       
 
                 <!--  Insertar tabla aquí -->
-                <table class="table table-bordered" id="tablaListaCompras">
-                  <thead>
+                <table class="table table-bordered table-striped" id="tablaListaCompras">
+                  <thead class="thead-dark">
                     <tr>
                       <th scope="col">#</th>
-                      <th scope="col">Imagen</th>
-                      <th scope="col">Nombre</th>
-                      <th scope="col">Autor</th>
+                      <th scope="col">Detalle del libro</th>
                       <th scope="col" class="text-center">Cantidad</th>
                       <th scope="col">Precio</th>
                     </tr>
@@ -80,22 +83,14 @@
                   <tbody>
                   </tbody>
                 </table>
-                <input id="botonEnviar" type="submit" value="Realizar compra" style="margin-top: 10px;" />
-                <input id="botonLimpiar" type="submit" value="Borrar carrito" style="margin-top: 10px;" />
 
             </div>
           </div>
       
         </div>
-
-
-
-
-
-
-
     </section>
-    <!--  Contenedor de todo el contenido -->
+  </div>
+  <!--   SECTION   CONTENIDO   -->
 
 
     <!--FOOTER-->

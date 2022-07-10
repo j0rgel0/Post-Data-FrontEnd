@@ -321,6 +321,16 @@ button.btn {
     padding: 10px;
 }
 
+#imagenProductoCarrito {
+    width: 150px;
+    height: 200px;
+    display: block;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+}
+
 #contenedorProducto:hover,
 #imagenProducto:hover #botonAnadir {
     box-shadow: rgba(0, 0, 0, 0.35) 0 1px 30px;
