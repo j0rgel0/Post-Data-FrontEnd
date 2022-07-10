@@ -27,59 +27,59 @@
   <nav id="header" class="navbar navbar-expand-lg navbar-light bg-light bg-white textomenu"></nav>
   <!--nav bar-->
 
-  <!--   SECTION   CONTENIDO   -->
-  <section class="contenido">
-    <div class="columnas">
-      <form id="formEnviar" method="post">
-        <h1 id="tituloH1">CREAR CUENTA</h1>
+  <div class="p-3">
+    <!--   SECTION   CONTENIDO   -->
+    <section class="contenido">
+      <div class="columnas">
+        <form id="formEnviar" method="post">
+          <h1 id="tituloH1">CREAR CUENTA</h1>
 
-        <!--   Nombre    -->
-        <label for="nombre" class="etiqueta">Nombre</label>
-        <input id="nombre" name="nombre" type="text" class="campos" placeholder="Ingrese su nombre" />
-        <!--   Mostrar Alerta de Validacíon   -->
-        <div class="alert alert-danger" role="alert" style="display: none;" id="errorNombre"></div>
-        <!--   Mostrar Alerta de Validacíon   -->
+          <!--   Nombre    -->
+          <label for="nombre" class="etiqueta">Nombre</label>
+          <input id="nombre" name="nombre" type="text" class="campos" placeholder="Ingrese su nombre" />
+          <!--   Mostrar Alerta de Validacíon   -->
+          <div class="alert alert-danger" role="alert" style="display: none;" id="errorNombre"></div>
+          <!--   Mostrar Alerta de Validacíon   -->
 
-        <!--   Email   -->
-        <label for="email" class="etiqueta">Email</label>
-        <input id="email" name="email" type="email" class="campos" placeholder="Ingrese su email" />
-        <!--   Mostrar Alerta de Validacíon   -->
-        <div class="alert alert-danger" role="alert" style="display: none;" id="errorEmail"></div>
-        <div class="alert alert-danger" role="alert" style="display: none;" id="errorValidacion"></div>
-        <!--   Mostrar Alerta de Validacíon   -->
+          <!--   Email   -->
+          <label for="email" class="etiqueta">Email</label>
+          <input id="email" name="email" type="email" class="campos" placeholder="Ingrese su email" />
+          <!--   Mostrar Alerta de Validacíon   -->
+          <div class="alert alert-danger" role="alert" style="display: none;" id="errorEmail"></div>
+          <div class="alert alert-danger" role="alert" style="display: none;" id="errorValidacion"></div>
+          <!--   Mostrar Alerta de Validacíon   -->
 
-        <!--   Contraseña   -->
-        <label for="contrasena" class="etiqueta">Contraseña</label>
-        <input id="contrasena" name="contrasena" type="password" class="campos" placeholder="**********" />
-        <!--   Mostrar Alerta de Validacíon   -->
-        <div class="alert alert-danger" role="alert" style="display: none;" id="errorContrasena"></div>
-        <!--   Mostrar Alerta de Validacíon   -->
+          <!--   Contraseña   -->
+          <label for="contrasena" class="etiqueta">Contraseña</label>
+          <input id="contrasena" name="contrasena" type="password" class="campos" placeholder="**********" />
+          <!--   Mostrar Alerta de Validacíon   -->
+          <div class="alert alert-danger" role="alert" style="display: none;" id="errorContrasena"></div>
+          <!--   Mostrar Alerta de Validacíon   -->
 
-        <!--   Confirma Contraseña   -->
-        <label for="contrasenaConfirma" class="etiqueta">Confirma tu Contraseña</label>
-        <input id="contrasenaConfirma" name="contrasenaConfirma" type="password" class="campos"
-          placeholder="**********" />
-        <!--   Mostrar Alerta de Validacíon   -->
-        <div class="alert alert-danger" role="alert" style="display: none;" id="errorContrasenaConfirma"></div>
-        <!--   Mostrar Alerta de Validacíon   -->
+          <!--   Confirma Contraseña   -->
+          <label for="contrasenaConfirma" class="etiqueta">Confirma tu Contraseña</label>
+          <input id="contrasenaConfirma" name="contrasenaConfirma" type="password" class="campos"
+            placeholder="**********" />
+          <!--   Mostrar Alerta de Validacíon   -->
+          <div class="alert alert-danger" role="alert" style="display: none;" id="errorContrasenaConfirma"></div>
+          <!--   Mostrar Alerta de Validacíon   -->
 
-        <input id="botonEnviar" type="submit" value="Crear Cuenta" style="margin-top: 10px;" />
-      </form>
+          <input class="mt-3" id="botonEnviar" type="submit" value="Crear Cuenta" />
+        </form>
+        <p id="mensajeAbajoBoton" class="text-center">
+          <a href="./login.html" class="text-center link">¿Ya tienes cuenta? Inicia sesi&oacute;n</a>
+        </p>
+        <!--Link redireccion a  -->
 
-      <!--Link redireccion a  -->
-      <div>
-        <a href='./login.html' class="link">¿Ya tienes cuenta? Inicia sesi&oacute;n</a>
+        <!--   SECTION   CONTENIDO   -->
       </div>
-
-      <!--   SECTION   CONTENIDO   -->
-    </div>
-    <div class="columnas imagen">
-      <!--   SECTION   IMAGEN   -->
-      <img id="imagenRegistro" src="./img/libros.svg">
-      <!--   SECTION   IMAGEN   -->
-    </div>
-  </section>
-
+      <div class=" columnas imagen">
+        <!--   SECTION   IMAGEN   -->
+        <img id="imagenRegistro" src="./img/libros.svg">
+        <!--   SECTION   IMAGEN   -->
+      </div>
+    </section>
+  </div>
 
 
   <!--FOOTER-->

@@ -28,62 +28,64 @@
   <!--nav bar-->
 
   <!--   SECTION   CONTENIDO   -->
-  <form id="formEnviar" method="post">
-    <h1 id="tituloH1">REGISTRA PRODUCTO</h1>
+  <div class="container">
+    <form id="formEnviar" method="post">
+      <h1 id="tituloH1">REGISTRA PRODUCTO</h1>
 
-    <!--   Nombre   -->
-    <label for="nombre" class="etiqueta">Nombre del libro</label>
-    <input id="nombre" name="nombre" type="text" class="campos" placeholder="Ingrese el nombre del libro" />
-    <!--   Mostrar Alerta de Validacíon   -->
-    <div class="alert alert-danger" role="alert" style="display: none" id="errorLibro"></div>
-    <!--   Mostrar Alerta de Validacíon   -->
+      <!--   Nombre   -->
+      <label for="nombre" class="etiqueta">Nombre del libro</label>
+      <input id="nombre" name="nombre" type="text" class="campos" placeholder="Ingrese el nombre del libro" />
+      <!--   Mostrar Alerta de Validacíon   -->
+      <div class="alert alert-danger" role="alert" style="display: none" id="errorLibro"></div>
+      <!--   Mostrar Alerta de Validacíon   -->
 
-    <!--   Autor   -->
-    <label for="autor" class="etiqueta">Autor(es)</label>
-    <input id="autor" name="autor" type="text" class="campos"
-      placeholder="Ingrese el(los) nombre(s) del(os) autor(es)" />
-    <!--   Mostrar Alerta de Validacíon   -->
-    <div class="alert alert-danger" role="alert" style="display: none" id="errorAutor"></div>
-    <!--   Mostrar Alerta de Validacíon   -->
+      <!--   Autor   -->
+      <label for="autor" class="etiqueta">Autor(es)</label>
+      <input id="autor" name="autor" type="text" class="campos"
+        placeholder="Ingrese el(los) nombre(s) del(os) autor(es)" />
+      <!--   Mostrar Alerta de Validacíon   -->
+      <div class="alert alert-danger" role="alert" style="display: none" id="errorAutor"></div>
+      <!--   Mostrar Alerta de Validacíon   -->
 
-    <!--   Editorial   -->
-    <label for="editorial" class="etiqueta">Editorial</label>
-    <input id="editorial" name="editorial" type="text" class="campos" placeholder="Ingrese la editorial" />
-    <!--   Mostrar Alerta de Validacíon   -->
-    <div class="alert alert-danger" role="alert" style="display: none" id="errorEditorial"></div>
-    <!--   Mostrar Alerta de Validacíon   -->
+      <!--   Editorial   -->
+      <label for="editorial" class="etiqueta">Editorial</label>
+      <input id="editorial" name="editorial" type="text" class="campos" placeholder="Ingrese la editorial" />
+      <!--   Mostrar Alerta de Validacíon   -->
+      <div class="alert alert-danger" role="alert" style="display: none" id="errorEditorial"></div>
+      <!--   Mostrar Alerta de Validacíon   -->
 
-    <!--   ISBN   -->
-    <label for="isbn" class="etiqueta">ISBN</label>
-    <input id="isbn" name="isbn" type="text" class="campos" placeholder="Ingrese el ISBN del libro" />
-    <!--   Mostrar Alerta de Validacíon   -->
-    <div class="alert alert-danger" role="alert" style="display: none" id="errorisbn"></div>
-    <!--   Mostrar Alerta de Validacíon   -->
+      <!--   ISBN   -->
+      <label for="isbn" class="etiqueta">ISBN</label>
+      <input id="isbn" name="isbn" type="text" class="campos" placeholder="Ingrese el ISBN del libro" />
+      <!--   Mostrar Alerta de Validacíon   -->
+      <div class="alert alert-danger" role="alert" style="display: none" id="errorisbn"></div>
+      <!--   Mostrar Alerta de Validacíon   -->
 
-    <!--   URL imagen   -->
-    <label for="urlImagen" class="etiqueta">URL de la imagen</label>
-    <input id="urlImagen" name="urlImagen" type="text" class="campos" placeholder="Ingrese el URL de la imagen" />
-    <!--   Mostrar Alerta de Validacíon   -->
-    <div class="alert alert-danger" role="alert" style="display: none" id="errorImagen"></div>
-    <!--   Mostrar Alerta de Validacíon   -->
+      <!--   URL imagen   -->
+      <label for="urlImagen" class="etiqueta">URL de la imagen</label>
+      <input id="urlImagen" name="urlImagen" type="text" class="campos" placeholder="Ingrese el URL de la imagen" />
+      <!--   Mostrar Alerta de Validacíon   -->
+      <div class="alert alert-danger" role="alert" style="display: none" id="errorImagen"></div>
+      <!--   Mostrar Alerta de Validacíon   -->
 
-    <!--   Descripción   -->
-    <label for="descripcion" class="etiqueta">Descripción</label>
-    <textarea id="descripcion" type="text" name="descripcion" class="campos"
-      placeholder="Ingrese un resumen del libro."></textarea>
-    <!--   Mostrar Alerta de Validacíon   -->
-    <div class="alert alert-danger" role="alert" style="display: none" id="errorDescripcion"></div>
-    <!--   Mostrar Alerta de Validacíon   -->
+      <!--   Descripción   -->
+      <label for="descripcion" class="etiqueta">Descripción</label>
+      <textarea id="descripcion" type="text" name="descripcion" class="campos"
+        placeholder="Ingrese un resumen del libro."></textarea>
+      <!--   Mostrar Alerta de Validacíon   -->
+      <div class="alert alert-danger" role="alert" style="display: none" id="errorDescripcion"></div>
+      <!--   Mostrar Alerta de Validacíon   -->
 
-    <!--   Precio   -->
-    <label for="precio" class="etiqueta">Precio</label>
-    <input id="precio" name="precio" type="text" class="campos" placeholder="Ingrese el precio del libro" />
-    <!--   Mostrar Alerta de Validacíon   -->
-    <div class="alert alert-danger" role="alert" style="display: none" id="errorPrecio"></div>
-    <!--   Mostrar Alerta de Validacíon   -->
+      <!--   Precio   -->
+      <label for="precio" class="etiqueta">Precio</label>
+      <input id="precio" name="precio" type="text" class="campos" placeholder="Ingrese el precio del libro" />
+      <!--   Mostrar Alerta de Validacíon   -->
+      <div class="alert alert-danger" role="alert" style="display: none" id="errorPrecio"></div>
+      <!--   Mostrar Alerta de Validacíon   -->
 
-    <input id="botonEnviar" type="submit" value="Añadir libro" style="margin-top: 10px;" />
-  </form>
+      <input id="botonEnviar" type="submit" value="Añadir libro" style="margin-top: 10px;" />
+    </form>
+  </div>
   <!--   SECTION   CONTENIDO   -->
 
   <!--FOOTER-->

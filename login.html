@@ -26,44 +26,45 @@
   <nav id="header" class="navbar navbar-expand-lg navbar-light bg-light bg-white textomenu"></nav>
   <!--nav bar-->
 
-  <!--   SECTION   CONTENIDO   -->
-  <section class="contenido">
-    <div class="columnas">
-      <form id="formEnviar" method="post">
-        <h1 id="tituloH1" style="margin-top: 45%;">INICIAR SESIÓN</h1>
+  <div class="p-3">
+    <!--   SECTION   CONTENIDO   -->
+    <section class="contenido">
+      <div class="columnas">
+        <form id="formEnviar" method="post">
+          <h1 id="tituloH1">INICIAR SESIÓN</h1>
 
-        <!--   Email   -->
-        <label for="email" class="etiqueta" id="email_sesion" style="margin-top: 5%;">Email</label>
-        <input id="email" name="email" type="email" class="campos" placeholder="Ingresa tu email" />
-        <!--   Mostrar Alerta de Validacíon   -->
-        <div class="alert alert-danger" role="alert" style="display: none;" id="errorEmail"></div>
-        <!--   Mostrar Alerta de Validacíon   -->
+          <!--   Email   -->
+          <label for="email" class="etiqueta" id="email_sesion">Email</label>
+          <input id="email" name="email" type="email" class="campos" placeholder="Ingresa tu email" />
+          <!--   Mostrar Alerta de Validacíon   -->
+          <div class="alert alert-danger" role="alert" style="display: none;" id="errorEmail"></div>
+          <!--   Mostrar Alerta de Validacíon   -->
 
-        <!--   Contraseña   -->
-        <label for="contrasena" class="etiqueta">Contraseña</label>
-        <input id="contrasena" name="contrasena" type="password" class="campos" placeholder="**********" />
-        <!--   Mostrar Alerta de Validacíon   -->
-        <div class="alert alert-danger" role="alert" style="display: none;" id="errorContrasena"></div>
-        <div class="alert alert-danger" role="alert" style="display: none;" id="errorValidacion"></div>
+          <!--   Contraseña   -->
+          <label for="contrasena" class="etiqueta">Contraseña</label>
+          <input id="contrasena" name="contrasena" type="password" class="campos" placeholder="**********" />
+          <!--   Mostrar Alerta de Validacíon   -->
+          <div class="alert alert-danger" role="alert" style="display: none;" id="errorContrasena"></div>
+          <div class="alert alert-danger" role="alert" style="display: none;" id="errorValidacion"></div>
 
-        <p>
-          <a href="#" class="link" style="margin-left: 0.5%;">Olvidé la contraseña</a>
-          <!--Link de redireccion funcion olvide la contraseña-->
+          <p>
+            <a href="#" class="link" style="margin-left: 0.5%;">Olvidé la contraseña</a>
+            <!--Link de redireccion funcion olvide la contraseña-->
+          </p>
+          <input id="botonEnviar" type="submit" value="Iniciar sesión" />
+        </form>
+        <p id="mensajeAbajoBoton" class="text-center link">
+          <a href='./registro_cuenta.html' class="text-center link">¿No tienes una cuenta? Crea una</a>
         </p>
-        <input id="botonEnviar" type="submit" value="Iniciar sesión" style="margin-top: 10px;" />
-      </form>
-      <p>
-        <a href='./registro_cuenta.html' class="link" style="margin-left: 33%;">¿No tienes una cuenta? Crear</a>
-      </p>
-      <!--   SECTION   CONTENIDO   -->
-    </div>
-    <div class="columnas imagen">
-      <!--   SECTION   IMAGEN   -->
-      <img id="imagenRegistro" src="./img/libros.svg">
-      <!--   SECTION   IMAGEN   -->
-    </div>
-  </section>
-
+        <!--   SECTION   CONTENIDO   -->
+      </div>
+      <div class="columnas imagen">
+        <!--   SECTION   IMAGEN   -->
+        <img id="imagenRegistro" src="./img/libros.svg">
+        <!--   SECTION   IMAGEN   -->
+      </div>
+    </section>
+  </div>
 
 
   <!--FOOTER-->
