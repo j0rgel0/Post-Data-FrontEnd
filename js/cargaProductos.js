@@ -21,7 +21,7 @@ const productos = [{
     "editorial": "TASCHEN",
     "descripcion": "Un estudio de la escena arquitectónica contemporánea de JapónLa arquitectura japonesa contemporánea ha sido durante mucho tiempo una de las más imaginativas del mundo, y es famosa por sus diseños sostenibles y su infinita creatividad. Nada menos que siete arquitectos japoneses han ganado el premio Pritzker.Desde que la Exposición Universal de Osaka de 1970 cedió el protagonismo a las formas contemporáneas, Japón ha sido uno de los actores clave de la arquitectura global. Con un vocabulario limitado intencionalmente a formas geométricas, Tadao Ando puso la arquitectura japonesa en el mapa cultural del mundo y estableció un puente entre Oriente y Occidente. Siguiendo la estela de los edificios de Ando, en su mayoría de hormigón, figuras como Kengo Kuma (Estadio Nacional de Japón, destinado a albergar los Juegos Olímpicos que debían haberse celebrado en 2020), Shigeru Ban (Centro de Patrimonio Mundial Monte Fuji) y Kazuyo Sejima (Museo de Arte Contemporáneo del Siglo XXI de Kanazawa) se convirtieron en pioneros de un enfoque más sostenible.",
     "isbn": "9783836575119",
-    "precio": "1,649.00"
+    "precio": "1649.00"
 }, {
     "nombre": "El infinito en un junco",
     "autor": "Irene Vallejo",
