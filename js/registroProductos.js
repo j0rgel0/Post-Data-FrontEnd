@@ -34,7 +34,7 @@ botonEnviar.addEventListener("click", (event)=> {
     
         // Crear de nuevo JSON
         localStorage.setItem("productos", JSON.stringify(datos));
-    
+        swal("Producto añadido correctamente", "", "success"); //SweetAlert
         txtNombre.value = "";
         txtNombre.focus();
         txtAutor.value = "";
