@@ -11,7 +11,7 @@ botonBuscar.addEventListener("click", (event) => {
         let producto = null;
         for (let i = 0; i < productos.length; i++) {
             const recuperado = productos[i];
-            if (recuperado["id"] == txtId.value) {
+            if (recuperado["isbn"] == txtId.value) {
                 producto = recuperado;
                 break;
             }
@@ -19,7 +19,7 @@ botonBuscar.addEventListener("click", (event) => {
         if (producto) {
             addItem(producto);
         } else {
-            console.log('No existe el producto!!!!');
+            console.log('No existe el producto.');
             itemsContainer.innerHTML = null;
         }
         txtId.value = null;
