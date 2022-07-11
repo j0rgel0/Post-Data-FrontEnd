@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PostData - Registro de productos</title>
+
+  <!-- CSS del bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <!-- El estilo del menu, fondo blanco, color de letra activa y normal -->
+  <link rel="stylesheet" href="./css/style.css">
+
+  <!-- Se tiene que añadir la tipografía Raleway, la cuál está en el diseño de figma -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!--nav bar-->
+  <nav id="header" class="navbar navbar-expand-lg navbar-light bg-light bg-white textomenu"></nav>
+  <!--nav bar-->
+
+  <!--   SECTION   CONTENIDO   -->
+
+  <div class="container-fluid administrador">
+    <!--menu-->
+        <div class="row row-offcanvas row-offcanvas-left">
+             <div class="col-xs-6 col-sm-3 sidebar-offcanvas" role="navigation">
+              <ul class="list-group panel">
+                <li class="list-group-item"><i class="glyphicon glyphicon-align-justify"></i> <b>ADMINISTRADOR</b></li>
+                <li class="list-group-item"><a href="dashboard_perfil.html"><i class="glyphicon glyphicon-th-list"></i>Perfil</a></li><li>
+                <a href="#demo3" class="list-group-item " data-toggle="collapse">Producto<span class="glyphicon glyphicon-chevron-right"></span></a>
+                <div class="collapse" id="demo3">
+                  <a href="dashboard_registro_productos.html"class="list-group-item">Registra productos</a>
+                  <a href="dashboard_busca_productos.html"class="list-group-item">Edita productos</a>
+                </div>
+                </li>
+            </ul>
+          </div>
+
+  <form id="formEnviar" method="post">
+    <h1 id="tituloH1">REGISTRA PRODUCTO</h1>
+
+    <!--   Nombre   -->
+    <label for="nombre" class="etiqueta">Nombre del libro</label>
+    <input id="nombre" name="nombre" type="text" class="campos" placeholder="Ingrese el nombre del libro" />
+    <!--   Mostrar Alerta de Validacíon   -->
+    <div class="alert alert-danger" role="alert" style="display: none" id="errorLibro"></div>
+    <!--   Mostrar Alerta de Validacíon   -->
+
+    <!--   Autor   -->
+    <label for="autor" class="etiqueta">Autor(es)</label>
+    <input id="autor" name="autor" type="text" class="campos"
+      placeholder="Ingrese el(los) nombre(s) del(os) autor(es)" />
+    <!--   Mostrar Alerta de Validacíon   -->
+    <div class="alert alert-danger" role="alert" style="display: none" id="errorAutor"></div>
+    <!--   Mostrar Alerta de Validacíon   -->
+
+    <!--   Editorial   -->
+    <label for="editorial" class="etiqueta">Editorial</label>
+    <input id="editorial" name="editorial" type="text" class="campos" placeholder="Ingrese la editorial" />
+    <!--   Mostrar Alerta de Validacíon   -->
+    <div class="alert alert-danger" role="alert" style="display: none" id="errorEditorial"></div>
+    <!--   Mostrar Alerta de Validacíon   -->
+
+    <!--   ISBN   -->
+    <label for="isbn" class="etiqueta">ISBN</label>
+    <input id="isbn" name="isbn" type="text" class="campos" placeholder="Ingrese el ISBN del libro" />
+    <!--   Mostrar Alerta de Validacíon   -->
+    <div class="alert alert-danger" role="alert" style="display: none" id="errorisbn"></div>
+    <!--   Mostrar Alerta de Validacíon   -->
+
+    <!--   URL imagen   -->
+    <label for="urlImagen" class="etiqueta">URL de la imagen</label>
+    <input id="urlImagen" name="urlImagen" type="text" class="campos" placeholder="Ingrese el URL de la imagen" />
+    <!--   Mostrar Alerta de Validacíon   -->
+    <div class="alert alert-danger" role="alert" style="display: none" id="errorImagen"></div>
+    <!--   Mostrar Alerta de Validacíon   -->
+
+    <!--   Descripción   -->
+    <label for="descripcion" class="etiqueta">Descripción</label>
+    <textarea id="descripcion" type="text" name="descripcion" class="campos"
+      placeholder="Ingrese un resumen del libro."></textarea>
+    <!--   Mostrar Alerta de Validacíon   -->
+    <div class="alert alert-danger" role="alert" style="display: none" id="errorDescripcion"></div>
+    <!--   Mostrar Alerta de Validacíon   -->
+
+    <!--   Precio   -->
+    <label for="precio" class="etiqueta">Precio</label>
+    <input id="precio" name="precio" type="text" class="campos" placeholder="Ingrese el precio del libro" />
+    <!--   Mostrar Alerta de Validacíon   -->
+    <div class="alert alert-danger" role="alert" style="display: none" id="errorPrecio"></div>
+    <!--   Mostrar Alerta de Validacíon   -->
+
+    <input id="botonEnviar" type="submit" value="Añadir libro" style="margin-top: 10px;" />
+  </form>
+  </div>
+</div>
+  <!--   SECTION   CONTENIDO   -->
+
+  <!--FOOTER-->
+  <footer id="footer"></footer>
+  <!--FOOTER-->
+
+  <script src="./js/validaciones.js"></script>
+  <script src="./js/registroProductos.js"></script>
+  <script src="js/headerfooter.js"></script>
+
+  <!--Siempre de los siempres va abajo. Si no, arroja error-->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
