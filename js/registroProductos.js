@@ -22,19 +22,24 @@ botonEnviar.addEventListener("click", (event)=> {
         let elemento =  `
         {"nombre" : "${txtNombre.value}",
         "autor" : "${txtAutor.value}",
-        "img" : "${txtURL.value}",
+        "url_imagen" : "${txtURL.value}",
         "editorial" : "${txtEditorial.value}",
         "descripcion" : "${txtDescripcion.value}",
         "isbn" : "${txtISBN.value}",
         "precio" : "${txtPrecio.value}"}`;
         
+        /* //Se comenta este codigo como futura referencia, 
+            era para guardar en el local storage 
         //JSON a JS
-        datos = JSON.parse(localStorage.getItem("productos"));
-        datos.push(JSON.parse(elemento));
+        //datos = JSON.parse(localStorage.getItem("productos"));
+        //datos.push(JSON.parse(elemento));
     
         // Crear de nuevo JSON
-        localStorage.setItem("productos", JSON.stringify(datos));
-        swal("Producto añadido correctamente", "", "success"); //SweetAlert
+        //localStorage.setItem("productos", JSON.stringify(datos));
+        //swal("Producto añadido correctamente", "", "success"); //SweetAlert
+        */
+
+        createProduct(elemento);
         txtNombre.value = "";
         txtNombre.focus();
         txtAutor.value = "";
@@ -44,5 +49,25 @@ botonEnviar.addEventListener("click", (event)=> {
         txtDescripcion.value = "";
         txtPrecio.value = "";
      }
-    
 });
+
+const createProduct = (producto) => {
+
+   fetch('http://localhost:8081/api/products', 
+   {
+      body: producto,
+      method: 'POST',
+      headers: {"Content-type": "application/json; charset=UTF-8"}
+   })
+   .then(response => {
+      console.log(response)
+      if(response.status != 200) {
+         swal("Ocurrio un error al registrar el producto", "", "danger");
+      } else {
+         swal("Producto añadido correctamente", "", "success");
+      }
+   })
+   .catch(error => {
+      swal("Ocurrio un error al registrar el producto", "", "danger");
+   });
+}
